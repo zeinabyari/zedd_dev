@@ -42,15 +42,18 @@
                             <div class="col-12 position-relative">
                                 <div class="video-player rounded-3">
                                     <video controls crossorigin="anonymous" playsinline
-                                           poster="assets/images/videos/poster.jpg">
-                                        <source src="assets/images/videos/360p.mp4" type="video/mp4" size="360">
-                                        <source src="assets/images/videos/720p.mp4" type="video/mp4" size="720">
-                                        <source src="assets/images/videos/1080p.mp4" type="video/mp4" size="1080">
+                                           poster="{{ asset('assets/images/videos/poster.jpg') }}">
+                                        <source src="{{ asset('assets/images/videos/360p.mp4') }}" type="video/mp4"
+                                                size="360">
+                                        <source src="{{ asset('assets/images/videos/720p.mp4') }}" type="video/mp4"
+                                                size="720">
+                                        <source src="{{ asset('assets/images/videos/1080p.mp4') }}" type="video/mp4"
+                                                size="1080">
                                         <!-- Caption files -->
                                         <track kind="captions" label="English" srclang="en"
-                                               src="assets/images/videos/en.vtt" default>
+                                               src="{{ asset('assets/images/videos/en.vtt') }}" default>
                                         <track kind="captions" label="French" srclang="fr"
-                                               src="assets/images/videos/fr.vtt">
+                                               src="{{ asset('assets/images/videos/fr.vtt') }}">
                                     </video>
                                 </div>
                             </div>
@@ -677,7 +680,8 @@
                                         <div class="d-sm-flex align-items-center">
                                             <!-- Avatar image -->
                                             <div class="avatar avatar-xl">
-                                                <img class="avatar-img rounded-circle" src="assets/images/avatar/05.jpg"
+                                                <img class="avatar-img rounded-circle"
+                                                     src="{{asset('assets/images/avatar/05.jpg')}}"
                                                      alt="avatar">
                                             </div>
                                             <div class="ms-sm-3 mt-2 mt-sm-0">
