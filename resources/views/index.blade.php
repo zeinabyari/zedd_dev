@@ -2,7 +2,7 @@
 <html lang="fa" dir="rtl">
 
 <head>
-    <title>Eduport - قالب HTML دوره آنلاین و آموزش</title>
+    <title>{{ setting('site.title') }}</title>
 
     <!-- Meta Tags -->
     <meta charset="utf-8">

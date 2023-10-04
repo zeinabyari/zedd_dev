@@ -56,9 +56,7 @@
                     <div class="col-6 col-md-4">
                         <h5 class="mb-2 mb-md-4 text-white">لینک های سریع</h5>
                         <ul class="nav flex-column text-primary-hover">
-                            <li class="nav-item"><a class="nav-link" href="#">جذب مدرس</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">مشاوره رایگان</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">شرایط و قوانین</a></li>
+                         {{ menu('footer') }}
                         </ul>
                     </div>
                 </div>
@@ -70,7 +68,7 @@
                 <h5 class="mb-2 mb-md-4 text-white">تماس با ما</h5>
                 <!-- Time -->
                 <p class="mb-2 text-muted">
-                    تلفن: <span class="h6 fw-light ms-2 text-white">093200000000</span>
+                    تلفن: <span class="h6 fw-light ms-2 text-white">{{ setting('contact.phone') }}</span>
                     <span class="d-block small">(9:00 تا 17:00 بعداز ظهر)</span>
                 </p>
 
