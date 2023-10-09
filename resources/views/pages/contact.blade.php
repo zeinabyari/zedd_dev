@@ -131,25 +131,47 @@
                         <p>برای درخواست نمایندگی لطفا با بخش فروش شرکت تماس بگیرید یا فرم را پر کنید سپس همکاران ما با
                             شما تماس خواهند گرفت.</p>
 
-                        <form>
+                        @if(Session::has('success'))
+                        <span style="color: #0a966c">
+                            {!! Session::get('success') !!}
+                        </span>
+                        @endif
+
+                        <form method="post" action="{{ route('contact_post') }}">
+                            @csrf
                             <!-- Name -->
                             <div class="mb-4 bg-light-input">
                                 <label for="yourName" class="form-label">نام و نام خانوادگی *</label>
-                                <input type="text" class="form-control form-control-lg" id="yourName">
+                                <input type="text" class="form-control form-control-lg" id="yourName" name="name">
+                                @error('name')
+                                <span style="color: red">
+                                    {{ $message }}
+                                </span>
+                                @enderror
                             </div>
                             <!-- Email -->
                             <div class="mb-4 bg-light-input">
                                 <label for="emailInput" class="form-label">ایمیل *</label>
-                                <input type="email" class="form-control form-control-lg" id="emailInput">
+                                <input  class="form-control form-control-lg" id="emailInput" name="email">
+                                @error('email')
+                                <span style="color: red">
+                                    {{ $message }}
+                                </span>
+                                @enderror
                             </div>
                             <!-- Message -->
                             <div class="mb-4 bg-light-input">
                                 <label for="textareaBox" class="form-label">متن درخواست *</label>
-                                <textarea class="form-control" id="textareaBox" rows="4"></textarea>
+                                <textarea class="form-control" id="textareaBox" rows="4" name="description"></textarea>
+                                @error('description')
+                                <span style="color: red">
+                                    {{ $message }}
+                                </span>
+                                @enderror
                             </div>
                             <!-- Button -->
                             <div class="d-grid">
-                                <button class="btn btn-lg btn-primary mb-0" type="button">ارسال</button>
+                                <button class="btn btn-lg btn-primary mb-0" type="submit">ارسال</button>
                             </div>
                         </form>
                     </div>
