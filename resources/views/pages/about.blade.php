@@ -40,7 +40,7 @@
                         </figure>
 
                         <!-- Title -->
-                        <h1 class="position-relative fs-3">مشاور پروژه های برنامه نویسی و بازاریابی الکترونیکی</h1>
+                        <h1 class="position-relative fs-3">آموزش رایگان برنامه نویسی</h1>
                     </div>
                     <!-- Title and SVG END -->
                 </div>
@@ -81,9 +81,11 @@
                             <!-- Content -->
                             <div class="col-sm-6 col-md-12">
                                 <div class="bg-grad rounded-4 p-5 text-start">
-                                    <span class="text-white">هدف ما:</span>
-                                    <h3 class="text-white ff-vb">“پذیرای ایده ها و رویکردهای جدید باشید. مهارت های حل
-                                        مسئله خود را توسعه دهید.”</h3>
+                                    <span class="text-white">هدف من:</span>
+                                    <h3 class="text-white ff-vb">
+                                        دوست دارم تجربه این چند وقتمو در اختیار بقیه قرار بدم و برای کسایی که تازه میخوان برنامه نویسی رو شروع کنن
+                                        و سردگمن یه کمکی باشم :)
+                                        </h3>
                                 </div>
                             </div>
                             <!-- Image -->
@@ -106,10 +108,21 @@
                 <!-- Title -->
                 <div class="row mb-4">
                     <div class="col-lg-8">
-                        <h2>درباره آکادمی</h2>
-                        <p class="mb-0">با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
-                            متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
-                            نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+                        <h2>درباره من</h2>
+                        <p class="mb-0">
+                           من توی دانشگاه رشته مهندسی کامپیوتر شدم.
+                            از ۱۸ سالگی با برنامه نویسی آشنا شدم.
+                            با سی پلاس پلاس شروع کردم و بعدش خیلی کم جاوا هم کار کردم.
+                            وقتی میخواستم وارد باز کار شم
+                            اولش یه کم html/css کار کردم ولی از اونجایی که اصلا فرانت رو دوست نداشتم تصمیم گرفتم بکند رو انتخاب کنم :)
+                            طراحی سایت رو با وردپرس شروع کردم
+                            اول چنتا سایت وردپرسی زدم
+                            بعدش کم کم با لاراول آشنا شدم و همه پروژه هارو با لارول میزدم
+                            بعد نود جی اس رو یاد گرفتم باهاش کار کردم
+                            این وسط یه کمم با پایتون و جنگو کار کردم
+                            با انواع دیتابیس ها هم کار کردم
+                        </p>
+
                     </div>
                 </div>
 
@@ -248,47 +261,49 @@
 
                     <div class="col-lg-7 mt-4 mt-lg-0">
                         <!-- Title -->
-                        <h4 class="mb-3">بیش از 350 دانش آموز برای رسیدن به اهداف خود به ما پیوستند</h4>
+                        <h4 class="mb-3">داستان من</h4>
 
                         <!-- Content -->
-                        <p>طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت
-                            می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد
-                            وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی
-                            اساسا مورد استفاده قرار گیرد.</p>
-                        <p>چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی
-                            مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+                        <p>
+                            من سایت های خیلی زیادی رو با لاراول و نود جی اس زدم
+                            و میتونم این ادعا رو داشته باشم که هر باگی رو میتونم به راحتی حل کنم توی هرکدوم از اینا
+
+                        </p>
+
+{{--                        <p>چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی--}}
+{{--                            مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>--}}
 
                         <!-- Info -->
-                        <ul class="list-group list-group-borderless mt-4">
-                            <li class="list-group-item d-flex">
-                                <i class="bi bi-patch-check-fill text-success me-2"></i>راه اندازی و نصب زمان کمتری می
-                                برد
-                            </li>
-                            <li class="list-group-item d-flex">
-                                <i class="bi bi-patch-check-fill text-success me-2"></i>نرم افزار حرفه ای و آسان برای
-                                استفاده
-                            </li>
-                            <li class="list-group-item d-flex">
-                                <i class="bi bi-patch-check-fill text-success me-2"></i>مناسب برای هر دستگاهی با طراحی
-                                پیکسلی عالی
-                            </li>
-                            <li class="list-group-item d-flex">
-                                <i class="bi bi-patch-check-fill text-success me-2"></i>راه اندازی و نصب خیلی سریع
-                            </li>
-                        </ul>
+{{--                        <ul class="list-group list-group-borderless mt-4">--}}
+{{--                            <li class="list-group-item d-flex">--}}
+{{--                                <i class="bi bi-patch-check-fill text-success me-2"></i>راه اندازی و نصب زمان کمتری می--}}
+{{--                                برد--}}
+{{--                            </li>--}}
+{{--                            <li class="list-group-item d-flex">--}}
+{{--                                <i class="bi bi-patch-check-fill text-success me-2"></i>نرم افزار حرفه ای و آسان برای--}}
+{{--                                استفاده--}}
+{{--                            </li>--}}
+{{--                            <li class="list-group-item d-flex">--}}
+{{--                                <i class="bi bi-patch-check-fill text-success me-2"></i>مناسب برای هر دستگاهی با طراحی--}}
+{{--                                پیکسلی عالی--}}
+{{--                            </li>--}}
+{{--                            <li class="list-group-item d-flex">--}}
+{{--                                <i class="bi bi-patch-check-fill text-success me-2"></i>راه اندازی و نصب خیلی سریع--}}
+{{--                            </li>--}}
+{{--                        </ul>--}}
 
                         <!-- Progress bar START -->
                         <div class="row mt-3 g-4">
                             <!-- Progress item -->
                             <div class="col-md-6">
                                 <div class="overflow-hidden">
-                                    <h6>مشتری سازمانی</h6>
+                                    <h6>لاراول</h6>
                                     <div class="progress progress-sm bg-primary bg-opacity-10">
                                         <div class="progress-bar bg-primary aos" role="progressbar"
                                              data-aos="slide-left" data-aos-delay="200" data-aos-duration="1000"
-                                             data-aos-easing="ease-in-out" style="width: 85%" aria-valuenow="85"
+                                             data-aos-easing="ease-in-out" style="width: 100%" aria-valuenow="85"
                                              aria-valuemin="0" aria-valuemax="100">
-                                            <span class="progress-percent-simple ms-auto h6 fw-light">85%</span>
+                                            <span class="progress-percent-simple ms-auto h6 fw-light">100%</span>
                                         </div>
                                     </div>
                                 </div>
@@ -426,192 +441,192 @@
 
         <!-- =======================
         Award and Team START -->
-        <section>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 mb-4 mb-md-0">
-                        <!-- Title -->
-                        <h2 class="fs-4">جوایز امسال</h2>
-                        <!-- Content -->
-                        <ul class="list-group list-group-borderless mt-4">
-                            <!-- Award item -->
-                            <li class="list-group-item d-flex align-items-center px-0">
-                                <h6 class="mb-0">2015</h6>
-                                <span class="fs-6 ms-3">جایزه قهرمانان برای کودکان</span>
-                            </li>
-                            <!-- Award item -->
-                            <li class="list-group-item d-flex align-items-center px-0">
-                                <h6 class="mb-0">2016</h6>
-                                <span class="fs-6 ms-3">بهترین آکادمی آموزش و پرورش سال</span>
-                            </li>
-                            <!-- Award item -->
-                            <li class="list-group-item d-flex align-items-center px-0">
-                                <h6 class="mb-0">2017</h6>
-                                <span class="fs-6 ms-3">بهترین معلم سال</span>
-                            </li>
-                            <!-- Award item -->
-                            <li class="list-group-item d-flex align-items-center px-0">
-                                <h6 class="mb-0">2018</h6>
-                                <span class="fs-6 ms-3">بهترین آکادمی آموزشی 2018</span>
-                            </li>
-                            <!-- Award item -->
-                            <li class="list-group-item d-flex align-items-center px-0">
-                                <h6 class="mb-0">2019</h6>
-                                <span class="fs-6 ms-3">معلم ملت (مقام دوم)</span>
-                            </li>
-                            <!-- Award item -->
-                            <li class="list-group-item d-flex align-items-center px-0">
-                                <h6 class="mb-0">2020</h6>
-                                <span class="fs-6 ms-3">بهترین آکادمی مستقل آموزشی</span>
-                            </li>
-                        </ul>
-                    </div>
+{{--        <section>--}}
+{{--            <div class="container">--}}
+{{--                <div class="row">--}}
+{{--                    <div class="col-md-4 mb-4 mb-md-0">--}}
+{{--                        <!-- Title -->--}}
+{{--                        <h2 class="fs-4">جوایز امسال</h2>--}}
+{{--                        <!-- Content -->--}}
+{{--                        <ul class="list-group list-group-borderless mt-4">--}}
+{{--                            <!-- Award item -->--}}
+{{--                            <li class="list-group-item d-flex align-items-center px-0">--}}
+{{--                                <h6 class="mb-0">2015</h6>--}}
+{{--                                <span class="fs-6 ms-3">جایزه قهرمانان برای کودکان</span>--}}
+{{--                            </li>--}}
+{{--                            <!-- Award item -->--}}
+{{--                            <li class="list-group-item d-flex align-items-center px-0">--}}
+{{--                                <h6 class="mb-0">2016</h6>--}}
+{{--                                <span class="fs-6 ms-3">بهترین آکادمی آموزش و پرورش سال</span>--}}
+{{--                            </li>--}}
+{{--                            <!-- Award item -->--}}
+{{--                            <li class="list-group-item d-flex align-items-center px-0">--}}
+{{--                                <h6 class="mb-0">2017</h6>--}}
+{{--                                <span class="fs-6 ms-3">بهترین معلم سال</span>--}}
+{{--                            </li>--}}
+{{--                            <!-- Award item -->--}}
+{{--                            <li class="list-group-item d-flex align-items-center px-0">--}}
+{{--                                <h6 class="mb-0">2018</h6>--}}
+{{--                                <span class="fs-6 ms-3">بهترین آکادمی آموزشی 2018</span>--}}
+{{--                            </li>--}}
+{{--                            <!-- Award item -->--}}
+{{--                            <li class="list-group-item d-flex align-items-center px-0">--}}
+{{--                                <h6 class="mb-0">2019</h6>--}}
+{{--                                <span class="fs-6 ms-3">معلم ملت (مقام دوم)</span>--}}
+{{--                            </li>--}}
+{{--                            <!-- Award item -->--}}
+{{--                            <li class="list-group-item d-flex align-items-center px-0">--}}
+{{--                                <h6 class="mb-0">2020</h6>--}}
+{{--                                <span class="fs-6 ms-3">بهترین آکادمی مستقل آموزشی</span>--}}
+{{--                            </li>--}}
+{{--                        </ul>--}}
+{{--                    </div>--}}
 
-                    <!-- Our team START -->
-                    <div class="col-md-8">
-                        <!-- Title and button -->
-                        <div class="d-sm-flex justify-content-sm-between">
-                            <h2 class="mb-0 fs-4">مربیان ما</h2>
-                            <a href="#" class="btn btn-light mt-2">به گروه ما بپیوندید</a>
-                        </div>
+{{--                    <!-- Our team START -->--}}
+{{--                    <div class="col-md-8">--}}
+{{--                        <!-- Title and button -->--}}
+{{--                        <div class="d-sm-flex justify-content-sm-between">--}}
+{{--                            <h2 class="mb-0 fs-4">مربیان ما</h2>--}}
+{{--                            <a href="#" class="btn btn-light mt-2">به گروه ما بپیوندید</a>--}}
+{{--                        </div>--}}
 
-                        <!-- Slider START -->
-                        <div class="tiny-slider arrow-round arrow-creative arrow-blur arrow-hover mt-2 mt-sm-5">
-                            <div class="tiny-slider-inner" data-autoplay="true" data-arrow="true" data-dots="false"
-                                 data-items="4" data-items-lg="3" data-items-md="2">
+{{--                        <!-- Slider START -->--}}
+{{--                        <div class="tiny-slider arrow-round arrow-creative arrow-blur arrow-hover mt-2 mt-sm-5">--}}
+{{--                            <div class="tiny-slider-inner" data-autoplay="true" data-arrow="true" data-dots="false"--}}
+{{--                                 data-items="4" data-items-lg="3" data-items-md="2">--}}
 
-                                <!-- Avatar item -->
-                                <div class="text-center">
-                                    <!-- Avatar -->
-                                    <div class="avatar avatar-xxl mb-3">
-                                        <img class="avatar-img rounded-circle" src="assets/images/avatar/01.jpg"
-                                             alt="avatar">
-                                    </div>
-                                    <!-- Info -->
-                                    <h6 class="mb-0"><a href="#">سارا محمدی</a></h6>
-                                    <p class="mb-0 small">برنامه نویس</p>
-                                    <!-- Rating -->
-                                    <ul class="list-inline mb-0">
-                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i>
-                                        </li>
-                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i>
-                                        </li>
-                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i>
-                                        </li>
-                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i>
-                                        </li>
-                                        <li class="list-inline-item me-0 small"><i
-                                                class="fas fa-star-half-alt text-warning"></i></li>
-                                    </ul>
-                                </div>
+{{--                                <!-- Avatar item -->--}}
+{{--                                <div class="text-center">--}}
+{{--                                    <!-- Avatar -->--}}
+{{--                                    <div class="avatar avatar-xxl mb-3">--}}
+{{--                                        <img class="avatar-img rounded-circle" src="assets/images/avatar/01.jpg"--}}
+{{--                                             alt="avatar">--}}
+{{--                                    </div>--}}
+{{--                                    <!-- Info -->--}}
+{{--                                    <h6 class="mb-0"><a href="#">سارا محمدی</a></h6>--}}
+{{--                                    <p class="mb-0 small">برنامه نویس</p>--}}
+{{--                                    <!-- Rating -->--}}
+{{--                                    <ul class="list-inline mb-0">--}}
+{{--                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i>--}}
+{{--                                        </li>--}}
+{{--                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i>--}}
+{{--                                        </li>--}}
+{{--                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i>--}}
+{{--                                        </li>--}}
+{{--                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i>--}}
+{{--                                        </li>--}}
+{{--                                        <li class="list-inline-item me-0 small"><i--}}
+{{--                                                class="fas fa-star-half-alt text-warning"></i></li>--}}
+{{--                                    </ul>--}}
+{{--                                </div>--}}
 
-                                <!-- Avatar item -->
-                                <div class="text-center">
-                                    <!-- Avatar -->
-                                    <div class="avatar avatar-xxl mb-3">
-                                        <img class="avatar-img rounded-circle" src="assets/images/avatar/02.jpg"
-                                             alt="avatar">
-                                    </div>
-                                    <!-- Info -->
-                                    <h6 class="mb-0"><a href="#">مسعود نظری</a></h6>
-                                    <p class="mb-0 small">طراح گرافیک</p>
-                                    <!-- Rating -->
-                                    <ul class="list-inline mb-0">
-                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i>
-                                        </li>
-                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i>
-                                        </li>
-                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i>
-                                        </li>
-                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i>
-                                        </li>
-                                        <li class="list-inline-item me-0 small"><i
-                                                class="fas fa-star-half-alt text-warning"></i></li>
-                                    </ul>
-                                </div>
+{{--                                <!-- Avatar item -->--}}
+{{--                                <div class="text-center">--}}
+{{--                                    <!-- Avatar -->--}}
+{{--                                    <div class="avatar avatar-xxl mb-3">--}}
+{{--                                        <img class="avatar-img rounded-circle" src="assets/images/avatar/02.jpg"--}}
+{{--                                             alt="avatar">--}}
+{{--                                    </div>--}}
+{{--                                    <!-- Info -->--}}
+{{--                                    <h6 class="mb-0"><a href="#">مسعود نظری</a></h6>--}}
+{{--                                    <p class="mb-0 small">طراح گرافیک</p>--}}
+{{--                                    <!-- Rating -->--}}
+{{--                                    <ul class="list-inline mb-0">--}}
+{{--                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i>--}}
+{{--                                        </li>--}}
+{{--                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i>--}}
+{{--                                        </li>--}}
+{{--                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i>--}}
+{{--                                        </li>--}}
+{{--                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i>--}}
+{{--                                        </li>--}}
+{{--                                        <li class="list-inline-item me-0 small"><i--}}
+{{--                                                class="fas fa-star-half-alt text-warning"></i></li>--}}
+{{--                                    </ul>--}}
+{{--                                </div>--}}
 
-                                <!-- Avatar item -->
-                                <div class="text-center">
-                                    <!-- Avatar -->
-                                    <div class="avatar avatar-xxl mb-3">
-                                        <img class="avatar-img rounded-circle" src="assets/images/avatar/09.jpg"
-                                             alt="avatar">
-                                    </div>
-                                    <!-- Info -->
-                                    <h6 class="mb-0"><a href="#">نیلوفر کاظمی</a></h6>
-                                    <p class="mb-0 small">طراح وب</p>
-                                    <!-- Rating -->
-                                    <ul class="list-inline mb-0">
-                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i>
-                                        </li>
-                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i>
-                                        </li>
-                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i>
-                                        </li>
-                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i>
-                                        </li>
-                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i>
-                                        </li>
-                                    </ul>
-                                </div>
+{{--                                <!-- Avatar item -->--}}
+{{--                                <div class="text-center">--}}
+{{--                                    <!-- Avatar -->--}}
+{{--                                    <div class="avatar avatar-xxl mb-3">--}}
+{{--                                        <img class="avatar-img rounded-circle" src="assets/images/avatar/09.jpg"--}}
+{{--                                             alt="avatar">--}}
+{{--                                    </div>--}}
+{{--                                    <!-- Info -->--}}
+{{--                                    <h6 class="mb-0"><a href="#">نیلوفر کاظمی</a></h6>--}}
+{{--                                    <p class="mb-0 small">طراح وب</p>--}}
+{{--                                    <!-- Rating -->--}}
+{{--                                    <ul class="list-inline mb-0">--}}
+{{--                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i>--}}
+{{--                                        </li>--}}
+{{--                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i>--}}
+{{--                                        </li>--}}
+{{--                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i>--}}
+{{--                                        </li>--}}
+{{--                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i>--}}
+{{--                                        </li>--}}
+{{--                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i>--}}
+{{--                                        </li>--}}
+{{--                                    </ul>--}}
+{{--                                </div>--}}
 
-                                <!-- Avatar item -->
-                                <div class="text-center">
-                                    <!-- Avatar -->
-                                    <div class="avatar avatar-xxl mb-3">
-                                        <img class="avatar-img rounded-circle" src="assets/images/avatar/04.jpg"
-                                             alt="avatar">
-                                    </div>
-                                    <!-- Info -->
-                                    <h6 class="mb-0"><a href="#">سهراب ناصری</a></h6>
-                                    <p class="mb-0 small">کارشناس فروش</p>
-                                    <!-- Rating -->
-                                    <ul class="list-inline mb-0">
-                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i>
-                                        </li>
-                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i>
-                                        </li>
-                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i>
-                                        </li>
-                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i>
-                                        </li>
-                                        <li class="list-inline-item me-0 small"><i
-                                                class="fas fa-star-half-alt text-warning"></i></li>
-                                    </ul>
-                                </div>
+{{--                                <!-- Avatar item -->--}}
+{{--                                <div class="text-center">--}}
+{{--                                    <!-- Avatar -->--}}
+{{--                                    <div class="avatar avatar-xxl mb-3">--}}
+{{--                                        <img class="avatar-img rounded-circle" src="assets/images/avatar/04.jpg"--}}
+{{--                                             alt="avatar">--}}
+{{--                                    </div>--}}
+{{--                                    <!-- Info -->--}}
+{{--                                    <h6 class="mb-0"><a href="#">سهراب ناصری</a></h6>--}}
+{{--                                    <p class="mb-0 small">کارشناس فروش</p>--}}
+{{--                                    <!-- Rating -->--}}
+{{--                                    <ul class="list-inline mb-0">--}}
+{{--                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i>--}}
+{{--                                        </li>--}}
+{{--                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i>--}}
+{{--                                        </li>--}}
+{{--                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i>--}}
+{{--                                        </li>--}}
+{{--                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i>--}}
+{{--                                        </li>--}}
+{{--                                        <li class="list-inline-item me-0 small"><i--}}
+{{--                                                class="fas fa-star-half-alt text-warning"></i></li>--}}
+{{--                                    </ul>--}}
+{{--                                </div>--}}
 
-                                <!-- Avatar item -->
-                                <div class="text-center">
-                                    <!-- Avatar -->
-                                    <div class="avatar avatar-xxl mb-3">
-                                        <img class="avatar-img rounded-circle" src="assets/images/avatar/10.jpg"
-                                             alt="avatar">
-                                    </div>
-                                    <!-- Info -->
-                                    <h6 class="mb-0"><a href="#">میلاد عظیمی</a></h6>
-                                    <p class="mb-0 small">کارشناس IT</p>
-                                    <!-- Rating -->
-                                    <ul class="list-inline mb-0">
-                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i>
-                                        </li>
-                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i>
-                                        </li>
-                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i>
-                                        </li>
-                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i>
-                                        </li>
-                                        <li class="list-inline-item me-0 small"><i
-                                                class="fas fa-star-half-alt text-warning"></i></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Slider END -->
-                    </div>
-                    <!-- Our team END -->
-                </div>
-            </div>
-        </section>
+{{--                                <!-- Avatar item -->--}}
+{{--                                <div class="text-center">--}}
+{{--                                    <!-- Avatar -->--}}
+{{--                                    <div class="avatar avatar-xxl mb-3">--}}
+{{--                                        <img class="avatar-img rounded-circle" src="assets/images/avatar/10.jpg"--}}
+{{--                                             alt="avatar">--}}
+{{--                                    </div>--}}
+{{--                                    <!-- Info -->--}}
+{{--                                    <h6 class="mb-0"><a href="#">میلاد عظیمی</a></h6>--}}
+{{--                                    <p class="mb-0 small">کارشناس IT</p>--}}
+{{--                                    <!-- Rating -->--}}
+{{--                                    <ul class="list-inline mb-0">--}}
+{{--                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i>--}}
+{{--                                        </li>--}}
+{{--                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i>--}}
+{{--                                        </li>--}}
+{{--                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i>--}}
+{{--                                        </li>--}}
+{{--                                        <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i>--}}
+{{--                                        </li>--}}
+{{--                                        <li class="list-inline-item me-0 small"><i--}}
+{{--                                                class="fas fa-star-half-alt text-warning"></i></li>--}}
+{{--                                    </ul>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <!-- Slider END -->--}}
+{{--                    </div>--}}
+{{--                    <!-- Our team END -->--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </section>--}}
         <!-- =======================
         Award and Team END -->
 
