@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\course;
 
 use App\Http\Controllers\Controller;
+use App\Models\Course;
 use Illuminate\Http\Request;
 
 class CourseController extends Controller
@@ -10,30 +11,16 @@ class CourseController extends Controller
 
     public function index()
     {
-        return view('course.courses');
-    }
-
-
-    public function store(Request $request)
-    {
-        //
+        $courses = Course::all();
+        return view('course.courses', compact('courses'));
     }
 
 
     public function show($slug)
     {
-        return view('course.single_course');
+        $course = Course::query()->where('title' ,  str_replace('_' , ' ' , $slug))->firstOrFail();
+        return view('course.single_course' , compact('course'));
     }
 
 
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-
-    public function destroy($id)
-    {
-        //
-    }
 }

@@ -14,10 +14,8 @@
                             <!-- Title START -->
                             <div class="col-12">
                                 <!-- Title -->
-                                <h2 class="fs-3">آموزش رایگان Blazor WebAssembly</h2>
-                                <p>در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت
-                                    تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات
-                                    پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
+                                <h2 class="fs-3">{{ $course->title }}</h2>
+                                <p>{!!  $course->description !!}</p>
                                 <!-- Content -->
                                 <ul class="list-inline mb-0">
                                     <li class="list-inline-item fw-light h6 me-3 mb-1 mb-sm-0"><i
@@ -69,99 +67,65 @@
 
                                     <!-- Card body START -->
                                     <div class="card-body">
-                                        <p class="mb-3">به مجموعه ی آموزشی <strong>
-                                                آموزش رایگان Blazor WebAssembly</strong> خوش آمدید.</p>
-                                        <p class="mb-3">در این آموزش عملی، شما یاد خواهید گرفت که با این بسته دوره
-                                            آموزشی نهایی که شامل <strong> 12 دوره بازاریابی دیجیتال در یک پکیج</strong>
-                                            است، یک متخصص بازاریابی دیجیتال شوید! </p>
-                                        <p class="mb-0">اگر می‌خواهید مهارت‌هایی را که باید در برنامه درسی دوره
-                                            بازاریابی دیجیتال در هند یا هر جای دیگر جهان پوشش داده شود، بیابید، خواندن
-                                            این وبلاگ به شما کمک خواهد کرد. قبل از اینکه به موارد پیشرفته بپردازیم
-                                            <strong><a href="#" class="text-reset text-decoration-underline">دوره
-                                                    دیجیتال مارکتینگ</a></strong> برنامه درسی، بیایید به حوزه بازاریابی
-                                            دیجیتال و آینده نگاه کنیم.</p>
-                                        <!-- Collapse body -->
-                                        <div class="collapse" id="collapseContent">
-                                            <p class="my-3">برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف
-                                                بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته،
-                                                حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها
-                                                شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ
-                                                پیشرو در زبان فارسی ایجاد کرد.</p>
-                                            <p class="mb-0">کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت
-                                                فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای
-                                                طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی
-                                                ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه
-                                                راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی
-                                                دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد
-                                                استفاده قرار گیرد.
-                                            </p>
-                                        </div>
-                                        <!-- Collapse button -->
-                                        <a class="p-0 mb-0 mt-2 btn-more d-flex align-items-center"
-                                           data-bs-toggle="collapse" href="#collapseContent" role="button"
-                                           aria-expanded="false" aria-controls="collapseContent">
-                                            مشاهده <span class="see-more ms-1">بیشتر</span><span class="see-less ms-1">کمتر</span><i
-                                                class="fas fa-angle-down ms-2"></i>
-                                        </a>
-
+                                        {!!  $course->description2 !!}
                                         <!-- List content -->
-                                        <h5 class="mt-4">بعد از یادگیری:</h5>
-                                        <div class="row mb-3">
-                                            <div class="col-md-6">
-                                                <ul class="list-group list-group-borderless">
-                                                    <li class="list-group-item h6 fw-light d-flex mb-0"><i
-                                                            class="fas fa-check-circle text-success me-2"></i>معرفی دوره
-                                                        دیجیتال مارکتینگ
-                                                    </li>
-                                                    <li class="list-group-item h6 fw-light d-flex mb-0"><i
-                                                            class="fas fa-check-circle text-success me-2"></i>آموزش
-                                                        طراحی رابط کاربری وب و اپلیکشن
-                                                    </li>
-                                                    <li class="list-group-item h6 fw-light d-flex mb-0"><i
-                                                            class="fas fa-check-circle text-success me-2"></i>Facebook
-                                                        ADS
-                                                    </li>
-                                                    <li class="list-group-item h6 fw-light d-flex mb-0"><i
-                                                            class="fas fa-check-circle text-success me-2"></i>ابزارهای
-                                                        بهینه سازی موتور جستجو
-                                                    </li>
-                                                    <li class="list-group-item h6 fw-light d-flex mb-0"><i
-                                                            class="fas fa-check-circle text-success me-2"></i>توان کار
-                                                        با فتوشاپ
-                                                    </li>
-                                                    <li class="list-group-item h6 fw-light d-flex mb-0"><i
-                                                            class="fas fa-check-circle text-success me-2"></i>ابزارهای
-                                                        بهینه سازی موتور جستجو
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <ul class="list-group list-group-borderless">
-                                                    <li class="list-group-item h6 fw-light d-flex mb-0"><i
-                                                            class="fas fa-check-circle text-success me-2"></i>سئو چیست؟
-                                                    </li>
-                                                    <li class="list-group-item h6 fw-light d-flex mb-0"><i
-                                                            class="fas fa-check-circle text-success me-2"></i>آموزش
-                                                        اجرای لوگو
-                                                    </li>
-                                                    <li class="list-group-item h6 fw-light d-flex mb-0"><i
-                                                            class="fas fa-check-circle text-success me-2"></i>ساختار URL
-                                                    </li>
-                                                    <li class="list-group-item h6 fw-light d-flex mb-0"><i
-                                                            class="fas fa-check-circle text-success me-2"></i>طراحی بنر
-                                                        های دیجیتالی
-                                                    </li>
-                                                    <li class="list-group-item h6 fw-light d-flex mb-0"><i
-                                                            class="fas fa-check-circle text-success me-2"></i>نکات و
-                                                        ترفندهای سئو
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <p class="mb-0">در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه
-                                            راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی
-                                            دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد
-                                            استفاده قرار گیرد.</p>
+                                        {{--                                        <h5 class="mt-4">بعد از یادگیری:</h5>--}}
+                                        {{--                                        <div class="row mb-3">--}}
+                                        {{--                                            <div class="col-md-6">--}}
+                                        {{--                                                <ul class="list-group list-group-borderless">--}}
+                                        {{--                                                    <li class="list-group-item h6 fw-light d-flex mb-0"><i--}}
+                                        {{--                                                            class="fas fa-check-circle text-success me-2"></i>معرفی دوره--}}
+                                        {{--                                                        دیجیتال مارکتینگ--}}
+                                        {{--                                                    </li>--}}
+                                        {{--                                                    <li class="list-group-item h6 fw-light d-flex mb-0"><i--}}
+                                        {{--                                                            class="fas fa-check-circle text-success me-2"></i>آموزش--}}
+                                        {{--                                                        طراحی رابط کاربری وب و اپلیکشن--}}
+                                        {{--                                                    </li>--}}
+                                        {{--                                                    <li class="list-group-item h6 fw-light d-flex mb-0"><i--}}
+                                        {{--                                                            class="fas fa-check-circle text-success me-2"></i>Facebook--}}
+                                        {{--                                                        ADS--}}
+                                        {{--                                                    </li>--}}
+                                        {{--                                                    <li class="list-group-item h6 fw-light d-flex mb-0"><i--}}
+                                        {{--                                                            class="fas fa-check-circle text-success me-2"></i>ابزارهای--}}
+                                        {{--                                                        بهینه سازی موتور جستجو--}}
+                                        {{--                                                    </li>--}}
+                                        {{--                                                    <li class="list-group-item h6 fw-light d-flex mb-0"><i--}}
+                                        {{--                                                            class="fas fa-check-circle text-success me-2"></i>توان کار--}}
+                                        {{--                                                        با فتوشاپ--}}
+                                        {{--                                                    </li>--}}
+                                        {{--                                                    <li class="list-group-item h6 fw-light d-flex mb-0"><i--}}
+                                        {{--                                                            class="fas fa-check-circle text-success me-2"></i>ابزارهای--}}
+                                        {{--                                                        بهینه سازی موتور جستجو--}}
+                                        {{--                                                    </li>--}}
+                                        {{--                                                </ul>--}}
+                                        {{--                                            </div>--}}
+                                        {{--                                            <div class="col-md-6">--}}
+                                        {{--                                                <ul class="list-group list-group-borderless">--}}
+                                        {{--                                                    <li class="list-group-item h6 fw-light d-flex mb-0"><i--}}
+                                        {{--                                                            class="fas fa-check-circle text-success me-2"></i>سئو چیست؟--}}
+                                        {{--                                                    </li>--}}
+                                        {{--                                                    <li class="list-group-item h6 fw-light d-flex mb-0"><i--}}
+                                        {{--                                                            class="fas fa-check-circle text-success me-2"></i>آموزش--}}
+                                        {{--                                                        اجرای لوگو--}}
+                                        {{--                                                    </li>--}}
+                                        {{--                                                    <li class="list-group-item h6 fw-light d-flex mb-0"><i--}}
+                                        {{--                                                            class="fas fa-check-circle text-success me-2"></i>ساختار URL--}}
+                                        {{--                                                    </li>--}}
+                                        {{--                                                    <li class="list-group-item h6 fw-light d-flex mb-0"><i--}}
+                                        {{--                                                            class="fas fa-check-circle text-success me-2"></i>طراحی بنر--}}
+                                        {{--                                                        های دیجیتالی--}}
+                                        {{--                                                    </li>--}}
+                                        {{--                                                    <li class="list-group-item h6 fw-light d-flex mb-0"><i--}}
+                                        {{--                                                            class="fas fa-check-circle text-success me-2"></i>نکات و--}}
+                                        {{--                                                        ترفندهای سئو--}}
+                                        {{--                                                    </li>--}}
+                                        {{--                                                </ul>--}}
+                                        {{--                                            </div>--}}
+                                        {{--                                        </div>--}}
+                                        {{--                                        <p class="mb-0">در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه--}}
+                                        {{--                                            راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی--}}
+                                        {{--                                            دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد--}}
+                                        {{--                                            استفاده قرار گیرد.</p>--}}
                                     </div>
                                     <!-- Card body START -->
                                 </div>
@@ -184,325 +148,27 @@
                                             <div class="col-12">
                                                 <!-- Curriculum item -->
                                                 <h5 class="mb-4 font-base">معرفی دوره فتوشاپ (3 ویدیو)</h5>
-                                                <div class="d-sm-flex justify-content-sm-between align-items-center">
-                                                    <div class="d-flex">
-                                                        <a href="#" class="btn btn-danger-soft btn-round mb-0"><i
-                                                                class="fas fa-play"></i></a>
-                                                        <div class="ms-2 ms-sm-3 mt-1 mt-sm-0">
-                                                            <h6 class="mb-0 fw-normal">معرفی دوره</h6>
-                                                            <p class="mb-2 mb-sm-0 small">10ساعت</p>
-                                                        </div>
-                                                    </div>
-                                                    <!-- Button -->
-                                                    <a href="#" class="btn btn-sm btn-success mb-0">پخش</a>
-                                                </div>
-                                                <!-- Divider -->
-                                                <hr>
 
-                                                <!-- Curriculum item -->
-                                                <div class="d-sm-flex justify-content-sm-between align-items-center">
-                                                    <div class="d-flex">
-                                                        <a href="#"
-                                                           class="btn btn-danger-soft btn-round mb-0 flex-shrink-0"><i
-                                                                class="fas fa-play"></i></a>
-                                                        <div class="ms-2 ms-sm-3 mt-1 mt-sm-0">
-                                                            <h6 class="mb-0 fw-normal">دیجیتال مارکتینگ چیست؟</h6>
-                                                            <p class="mb-2 mb-sm-0 small">18دقیقه</p>
-                                                        </div>
-                                                    </div>
-                                                    <!-- Button -->
-                                                    <a href="#" class="btn btn-sm btn-success mb-0">پخش</a>
-                                                </div>
-                                                <!-- Divider -->
-                                                <hr>
-
-                                                <!-- Curriculum item -->
-                                                <div class="d-sm-flex justify-content-sm-between align-items-center">
-                                                    <div class="d-flex">
-                                                        <a href="#"
-                                                           class="btn btn-light btn-round mb-0 flex-shrink-0"><i
-                                                                class="bi bi-lock-fill"></i></a>
-                                                        <div class="ms-2 ms-sm-3 mt-1 mt-sm-0">
-                                                            <h6 class="mb-0 fw-normal">انواع دیجیتال مارکتینگ</h6>
-                                                            <p class="mb-2 mb-sm-0 small">22ساعت</p>
-                                                        </div>
-                                                    </div>
-                                                    <!-- Button -->
-                                                    <a href="#" class="btn btn-sm btn-orange mb-0">پولی</a>
-                                                </div>
-                                            </div>
-                                            <!-- Lecture item END -->
-
-                                            <!-- Lecture item START -->
-                                            <div class="col-12">
-                                                <!-- Curriculum item -->
-                                                <h5 class="mb-4 font-base">آموزش کار به صورت متوسطه (4 ویدیو)</h5>
-                                                <div class="d-sm-flex justify-content-sm-between align-items-center">
-                                                    <div class="d-flex">
-                                                        <a href="#"
-                                                           class="btn btn-danger-soft btn-round mb-0 flex-shrink-0"><i
-                                                                class="fas fa-play"></i></a>
-                                                        <div class="ms-2 ms-sm-3 mt-1 mt-sm-0">
-                                                            <h6 class="mb-0 fw-normal">دیجیتال مارکتینگ چیست؟</h6>
-                                                            <p class="mb-2 mb-sm-0 small">10ساعت</p>
-                                                        </div>
-                                                    </div>
-                                                    <!-- Button -->
-                                                    <a href="#" class="btn btn-sm btn-success mb-0">پخش</a>
-                                                </div>
-                                                <!-- Divider -->
-                                                <hr>
-
-                                                <!-- Curriculum item -->
-                                                <div class="d-sm-flex justify-content-sm-between align-items-center">
-                                                    <div class="d-flex">
-                                                        <a href="#"
-                                                           class="btn btn-danger-soft btn-round mb-0 flex-shrink-0"><i
-                                                                class="fas fa-play"></i></a>
-                                                        <div class="ms-2 ms-sm-3 mt-1 mt-sm-0">
-                                                            <h6 class="mb-0 fw-normal">توضیح تخصصی ابزار ها(قسمت
-                                                                اول)</h6>
-                                                            <p class="mb-2 mb-sm-0 small">18دقیقه</p>
-                                                        </div>
-                                                    </div>
-                                                    <!-- Button -->
-                                                    <a href="#" class="btn btn-sm btn-success mb-0">پخش</a>
-                                                </div>
-                                                <!-- Divider -->
-                                                <hr>
-
-                                                <!-- Curriculum item -->
-                                                <div class="d-sm-flex justify-content-sm-between align-items-center">
-                                                    <div class="d-flex">
-                                                        <a href="#"
-                                                           class="btn btn-light btn-round mb-0 flex-shrink-0"><i
-                                                                class="bi bi-lock-fill"></i></a>
-                                                        <div class="ms-2 ms-sm-3 mt-1 mt-sm-0">
-                                                            <h6 class="mb-0 fw-normal">توضیح تخصصی ابزار ها(قسمت
-                                                                دوم)</h6>
-                                                            <p class="mb-2 mb-sm-0 small">22ساعت</p>
-                                                        </div>
-                                                    </div>
-                                                    <!-- Button -->
-                                                    <a href="#" class="btn btn-sm btn-orange mb-0">پولی</a>
-                                                </div>
-                                                <!-- Divider -->
-                                                <hr>
-
-                                                <!-- Curriculum item -->
-                                                <div class="d-sm-flex justify-content-sm-between align-items-center">
-                                                    <div class="d-flex">
-                                                        <a href="#"
-                                                           class="btn btn-light btn-round mb-0 flex-shrink-0"><i
-                                                                class="bi bi-lock-fill"></i></a>
-                                                        <div class="ms-2 ms-sm-3 mt-1 mt-sm-0">
-                                                            <h6 class="mb-0 fw-normal">توضیح صفحات مختلف فتوشاپ</h6>
-                                                            <p class="mb-2 mb-sm-0 small">18دقیقه</p>
-                                                        </div>
-                                                    </div>
-                                                    <!-- Button -->
-                                                    <a href="#" class="btn btn-sm btn-orange mb-0">پولی</a>
-                                                </div>
-                                            </div>
-                                            <!-- Lecture item END -->
-
-                                            <!-- Lecture item START -->
-                                            <div class="col-12">
-                                                <!-- Curriculum item -->
-                                                <h5 class="mb-4 font-base">بهینه سازی موتور جستجو (SEO) چیست؟ (5
-                                                    ویدیو)</h5>
-                                                <div class="d-sm-flex justify-content-sm-between align-items-center">
-                                                    <div class="d-flex">
-                                                        <a href="#"
-                                                           class="btn btn-danger-soft btn-round mb-0 flex-shrink-0"><i
-                                                                class="fas fa-play"></i></a>
-                                                        <div class="ms-2 ms-sm-3 mt-1 mt-sm-0">
-                                                            <h6 class="mb-0 fw-normal">مروری بر سئو</h6>
-                                                            <p class="mb-2 mb-sm-0 small">18دقیقه</p>
-                                                        </div>
-                                                    </div>
-                                                    <!-- Button -->
-                                                    <a href="#" class="btn btn-sm btn-success mb-0">پخش</a>
-                                                </div>
-                                                <!-- Divider -->
-                                                <hr>
-
-                                                <!-- Curriculum item -->
-                                                <div class="d-sm-flex justify-content-sm-between align-items-center">
-                                                    <div class="d-flex">
-                                                        <a href="#"
-                                                           class="btn btn-danger-soft btn-round mb-0 flex-shrink-0"><i
-                                                                class="fas fa-play"></i></a>
-                                                        <div class="ms-2 ms-sm-3 mt-1 mt-sm-0">
-                                                            <h6 class="mb-0 fw-normal">ادیت تصویر مخصوص آتلیه</h6>
-                                                            <p class="mb-2 mb-sm-0 small">7ساعت</p>
-                                                        </div>
-                                                    </div>
-                                                    <!-- Button -->
-                                                    <a href="#" class="btn btn-sm btn-success mb-0">پخش</a>
-                                                </div>
-                                                <!-- Divider -->
-                                                <hr>
-
-                                                <!-- Curriculum item -->
-                                                <div class="d-sm-flex justify-content-sm-between align-items-center">
-                                                    <div class="d-flex">
-                                                        <a href="#"
-                                                           class="btn btn-danger-soft btn-round mb-0 flex-shrink-0"><i
-                                                                class="fas fa-play"></i></a>
-                                                        <div class="ms-2 ms-sm-3 mt-1 mt-sm-0">
-                                                            <h6 class="mb-0 fw-normal">شروع طراحی سایت دیجی کالا</h6>
-                                                            <p class="mb-2 mb-sm-0 small">15دقیقه</p>
-                                                        </div>
-                                                    </div>
-                                                    <!-- Button -->
-                                                    <a href="#" class="btn btn-sm btn-success mb-0">پخش</a>
-                                                </div>
-                                                <!-- Divider -->
-                                                <hr>
-
-                                                <!-- Curriculum item -->
-                                                <div class="d-sm-flex justify-content-sm-between align-items-center">
-                                                    <div class="d-flex">
-                                                        <a href="#"
-                                                           class="btn btn-danger-soft btn-round mb-0 flex-shrink-0"><i
-                                                                class="fas fa-play"></i></a>
-                                                        <div class="ms-2 ms-sm-3 mt-1 mt-sm-0">
-                                                            <h6 class="mb-0 fw-normal">ساخت کارت ویزیت</h6>
-                                                            <p class="mb-2 mb-sm-0 small">17ساعت</p>
-                                                        </div>
-                                                    </div>
-                                                    <!-- Button -->
-                                                    <a href="#" class="btn btn-sm btn-success mb-0">پخش</a>
-                                                </div>
-                                                <!-- Divider -->
-                                                <hr>
-
-                                                <!-- Curriculum item -->
-                                                <div class="d-sm-flex justify-content-sm-between align-items-center">
-                                                    <div class="d-flex">
-                                                        <a href="#"
-                                                           class="btn btn-danger-soft btn-round mb-0 flex-shrink-0"><i
-                                                                class="fas fa-play"></i></a>
-                                                        <div class="ms-2 ms-sm-3 mt-1 mt-sm-0">
-                                                            <h6 class="mb-0 fw-normal">برنامه ریزی کلمات کلیدی SEO</h6>
-                                                            <p class="mb-2 mb-sm-0 small">25دقیقه</p>
-                                                        </div>
-                                                    </div>
-                                                    <!-- Button -->
-                                                    <a href="#" class="btn btn-sm btn-success mb-0">پخش</a>
-                                                </div>
-                                            </div>
-                                            <!-- Lecture item END -->
-
-                                            <!-- Collapse body START -->
-                                            <div class="collapse mt-0" id="collapseCourse">
-                                                <!-- Lecture item START -->
-                                                <div class="col-12 mt-5">
-                                                    <!-- Curriculum item -->
-                                                    <h5 class="mb-4 font-base">بازاریابی YouTube (5 ویدیو)</h5>
+                                                @foreach($course->lesson as $lesson)
                                                     <div
                                                         class="d-sm-flex justify-content-sm-between align-items-center">
                                                         <div class="d-flex">
-                                                            <a href="#"
-                                                               class="btn btn-danger-soft btn-round mb-0 flex-shrink-0"><i
+                                                            <a href="#" class="btn btn-danger-soft btn-round mb-0"><i
                                                                     class="fas fa-play"></i></a>
                                                             <div class="ms-2 ms-sm-3 mt-1 mt-sm-0">
-                                                                <h6 class="mb-0 fw-normal">Paint Eyedropper</h6>
-                                                                <p class="mb-2 mb-sm-0 small">25دقیقه</p>
+                                                                <h6 class="mb-0 fw-normal">{{ $lesson->title }}</h6>
+                                                                <p class="mb-2 mb-sm-0 small">{{ $lesson->hour }}</p>
+                                                                <p class="mb-2 mb-sm-0 small">{!! $lesson->description !!}</p>
                                                             </div>
                                                         </div>
                                                         <!-- Button -->
-                                                        <a href="#" class="btn btn-sm btn-success mb-0">پخش</a>
+                                                        <a href="{{ $lesson->video }}" class="btn btn-sm btn-success mb-0">پخش</a>
                                                     </div>
                                                     <!-- Divider -->
                                                     <hr>
-
-                                                    <!-- Curriculum item -->
-                                                    <div
-                                                        class="d-sm-flex justify-content-sm-between align-items-center">
-                                                        <div class="d-flex">
-                                                            <a href="#"
-                                                               class="btn btn-danger-soft btn-round mb-0 flex-shrink-0"><i
-                                                                    class="fas fa-play"></i></a>
-                                                            <div class="ms-2 ms-sm-3 mt-1 mt-sm-0">
-                                                                <h6 class="mb-0 fw-normal">ابزار Webmaster</h6>
-                                                                <p class="mb-2 mb-sm-0 small">15دقیقه</p>
-                                                            </div>
-                                                        </div>
-                                                        <!-- Button -->
-                                                        <a href="#" class="btn btn-sm btn-success mb-0">پخش</a>
-                                                    </div>
-                                                    <!-- Divider -->
-                                                    <hr>
-
-                                                    <!-- Curriculum item -->
-                                                    <div
-                                                        class="d-sm-flex justify-content-sm-between align-items-center">
-                                                        <div class="d-flex">
-                                                            <a href="#"
-                                                               class="btn btn-light btn-round mb-0 flex-shrink-0"><i
-                                                                    class="bi bi-lock-fill"></i></a>
-                                                            <div class="ms-2 ms-sm-3 mt-1 mt-sm-0">
-                                                                <h6 class="mb-0 fw-normal">انتشار مطالب ویژه در
-                                                                    YouTube</h6>
-                                                                <p class="mb-2 mb-sm-0 small">32دقیقه</p>
-                                                            </div>
-                                                        </div>
-                                                        <!-- Button -->
-                                                        <a href="#" class="btn btn-sm btn-orange mb-0">پولی</a>
-                                                    </div>
-                                                    <!-- Divider -->
-                                                    <hr>
-
-                                                    <!-- Curriculum item -->
-                                                    <div
-                                                        class="d-sm-flex justify-content-sm-between align-items-center">
-                                                        <div class="d-flex">
-                                                            <a href="#"
-                                                               class="btn btn-light btn-round mb-0 flex-shrink-0"><i
-                                                                    class="bi bi-lock-fill"></i></a>
-                                                            <div class="ms-2 ms-sm-3 mt-1 mt-sm-0">
-                                                                <h6 class="mb-0 fw-normal">توضیح تخصصی ابزار ها(قسمت
-                                                                    دوم)</h6>
-                                                                <p class="mb-2 mb-sm-0 small">18دقیقه</p>
-                                                            </div>
-                                                        </div>
-                                                        <!-- Button -->
-                                                        <a href="#" class="btn btn-sm btn-orange mb-0">پولی</a>
-                                                    </div>
-                                                    <!-- Divider -->
-                                                    <hr>
-
-                                                    <!-- Curriculum item -->
-                                                    <div
-                                                        class="d-sm-flex justify-content-sm-between align-items-center">
-                                                        <div class="d-flex">
-                                                            <a href="#"
-                                                               class="btn btn-light btn-round mb-0 flex-shrink-0"><i
-                                                                    class="bi bi-lock-fill"></i></a>
-                                                            <div class="ms-2 ms-sm-3 mt-1 mt-sm-0">
-                                                                <h6 class="mb-0 fw-normal">توضیح تخصصی ابزار ها(قسمت
-                                                                    اول)</h6>
-                                                                <p class="mb-2 mb-sm-0 small">20دقیقه</p>
-                                                            </div>
-                                                        </div>
-                                                        <!-- Button -->
-                                                        <a href="#" class="btn btn-sm btn-orange mb-0">پولی</a>
-                                                    </div>
-                                                </div>
-                                                <!-- Lecture item END -->
+                                                @endforeach
                                             </div>
-                                            <!-- Collapse body END -->
 
-                                            <!-- Collapse button -->
-                                            <a class="mb-0 mt-4 btn-more d-flex align-items-center justify-content-center"
-                                               data-bs-toggle="collapse" href="#collapseCourse" role="button"
-                                               aria-expanded="false" aria-controls="collapseCourse">
-                                                مشاهده <span class="see-more mx-1">بیشتر</span><span
-                                                    class="see-less mx-1">کمتر</span> ویدیو<i
-                                                    class="fas fa-angle-down ms-2"></i>
-                                            </a>
 
                                         </div>
                                     </div>
@@ -681,12 +347,12 @@
                                             <!-- Avatar image -->
                                             <div class="avatar avatar-xl">
                                                 <img class="avatar-img rounded-circle"
-                                                     src="{{asset('assets/images/avatar/05.jpg')}}"
+                                                     src="{{ Voyager::image($course->teacher->image)  }}"
                                                      alt="avatar">
                                             </div>
                                             <div class="ms-sm-3 mt-2 mt-sm-0">
-                                                <h5 class="mb-0"><a href="#">لیندا محمدی</a></h5>
-                                                <p class="mb-0 small">مدرس طراحی وب</p>
+                                                <h5 class="mb-0"><a href="#">{{ $course->teacher->name }}</a></h5>
+                                                <p class="mb-0 small">{{$course->teacher->title  }}</p>
                                             </div>
                                         </div>
 
