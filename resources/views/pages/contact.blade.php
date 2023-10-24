@@ -14,81 +14,6 @@
                         <h1 class="mb-4 fs-4">ما برای کمک اینجا هستیم!</h1>
                     </div>
                 </div>
-
-                <!-- Contact info box -->
-                <div class="row g-4 g-md-5 mt-0 mt-lg-3">
-                    <!-- Box item -->
-                    <div class="col-lg-4 mt-lg-0">
-                        <div class="card card-body bg-primary shadow py-5 text-center h-100">
-                            <!-- Title -->
-                            <h5 class="text-white mb-3 fw-normal">پشتیبانی فروش</h5>
-                            <ul class="list-inline mb-0">
-                                <!-- Address -->
-                                <li class="list-item mb-3">
-                                    <a href="#" class="text-white"> <i
-                                            class="fas fa-fw fa-map-marker-alt me-2 mt-1"></i>تهران، میدان آزادی، جنب
-                                        مترو شادمان، مجتمع صدف </a>
-                                </li>
-                                <!-- Phone number -->
-                                <li class="list-item mb-3">
-                                    <a href="#" class="text-white"> <i class="fas fa-fw fa-phone-alt me-2"></i>09320000000
-                                    </a>
-                                </li>
-                                <!-- Email id -->
-                                <li class="list-item mb-0">
-                                    <a href="#" class="text-white"> <i class="far fa-fw fa-envelope me-2"></i>example@email.com
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Box item -->
-                    <div class="col-lg-4 mt-lg-0">
-                        <div class="card card-body shadow py-5 text-center h-100">
-                            <!-- Title -->
-                            <h5 class="mb-3 fw-normal">اطلاعات تماس</h5>
-                            <ul class="list-inline mb-0">
-                                <!-- Address -->
-                                <li class="list-item mb-3 h6 fw-light">
-                                    <a href="#"> <i class="fas fa-fw fa-map-marker-alt me-2 mt-1"></i>تهران، میدان
-                                        فردوسی، نرسیده به ولیعصر مجتمع صبا </a>
-                                </li>
-                                <!-- Phone number -->
-                                <li class="list-item mb-3 h6 fw-light">
-                                    <a href="#"> <i class="fas fa-fw fa-phone-alt me-2"></i>09320000000 </a>
-                                </li>
-                                <!-- Email id -->
-                                <li class="list-item mb-0 h6 fw-light">
-                                    <a href="#"> <i class="far fa-fw fa-envelope me-2"></i>example@email.com </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Box item -->
-                    <div class="col-lg-4 mt-lg-0">
-                        <div class="card card-body shadow py-5 text-center h-100">
-                            <!-- Title -->
-                            <h5 class="mb-3 fw-normal">دفتر مرکزی</h5>
-                            <ul class="list-inline mb-0">
-                                <!-- Address -->
-                                <li class="list-item mb-3 h6 fw-light">
-                                    <a href="#"> <i class="fas fa-fw fa-map-marker-alt me-2 mt-1"></i>تهران، چهارراه
-                                        ولیعصر، نرسیده به خیابان کریم خان زند </a>
-                                </li>
-                                <!-- Phone number -->
-                                <li class="list-item mb-3 h6 fw-light">
-                                    <a href="#"> <i class="fas fa-fw fa-phone-alt me-2"></i>02180000000 </a>
-                                </li>
-                                <!-- Email id -->
-                                <li class="list-item mb-0 h6 fw-light">
-                                    <a href="#"> <i class="far fa-fw fa-envelope me-2"></i>example@email.com </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
         <!-- =======================
@@ -102,24 +27,21 @@
 
                     <div class="col-md-6 align-items-center text-center">
                         <!-- Image -->
-                        <img src="assets/images/element/contact.svg" class="h-400px" alt="">
+                        <img src="{{asset('assets/images/element/dev.webp')}}" class="h-600px" alt="">
 
                         <!-- Social media button -->
                         <div class="d-sm-flex align-items-center justify-content-center mt-2 mt-sm-4">
-                            <h5 class="mb-0">ما را دنبال کنید:</h5>
+                            <h5 class="mb-0">اینجا میتونیم با هم در ارتباط باشیم :</h5>
                             <ul class="list-inline mb-0 ms-sm-2">
-                                <li class="list-inline-item"><a class="fs-5 me-1 text-facebook" href="#"><i
-                                            class="fab fa-fw fa-facebook-square"></i></a></li>
-                                <li class="list-inline-item"><a class="fs-5 me-1 text-instagram" href="#"><i
-                                            class="fab fa-fw fa-instagram"></i></a></li>
-                                <li class="list-inline-item"><a class="fs-5 me-1 text-twitter" href="#"><i
-                                            class="fab fa-fw fa-twitter"></i></a></li>
-                                <li class="list-inline-item"><a class="fs-5 me-1 text-linkedin" href="#"><i
-                                            class="fab fa-fw fa-linkedin-in"></i></a></li>
-                                <li class="list-inline-item"><a class="fs-5 me-1 text-dribbble" href="#"><i
-                                            class="fas fa-fw fa-basketball-ball"></i></a></li>
-                                <li class="list-inline-item"><a class="fs-5 me-1 text-pinterest" href="#"><i
-                                            class="fab fa-fw fa-pinterest"></i></a></li>
+                                @foreach($socials as $social)
+                                    <li class="list-inline-item">
+                                        <a class="fs-5 me-1 text-facebook" href="{{ $social->link }}" target="_blank">
+{{--                                            <i class="fab fa-fw fa-facebook-square"></i>--}}
+                                            <img src="{{ Voyager::image($social->icon) }}" class="h-50px" alt="{{ $social->name }}">
+
+                                        </a>
+                                    </li>
+                                @endforeach
                             </ul>
                         </div>
                     </div>
@@ -132,7 +54,7 @@
                             شما تماس خواهند گرفت.</p>
 
                         @if(Session::has('success'))
-                        <span style="color: #0a966c">
+                            <span style="color: #0a966c">
                             {!! Session::get('success') !!}
                         </span>
                         @endif
@@ -152,7 +74,7 @@
                             <!-- Email -->
                             <div class="mb-4 bg-light-input">
                                 <label for="emailInput" class="form-label">ایمیل *</label>
-                                <input  class="form-control form-control-lg" id="emailInput" name="email">
+                                <input class="form-control form-control-lg" id="emailInput" name="email">
                                 @error('email')
                                 <span style="color: red">
                                     {{ $message }}
@@ -184,18 +106,6 @@
 
         <!-- =======================
         Map START -->
-        <section class="pt-0">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <iframe class="w-100 h-400px grayscale rounded"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.6061159733226!2d51.40979635956936!3d35.71130927269164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e0114804ce6b1%3A0xef2337025f6d4dab!2z2KfYs9iq2KfZhiDYqtmH2LHYp9mG2Iwg2KrZh9ix2KfZhtiMINmF2YbYt9mC2Ycg27bYjCDZhduM2K_Yp9mGINmI2YTbjNi52LXYsdiMINin24zYsdin2YY!5e0!3m2!1sfa!2s!4v1681550832738!5m2!1sfa!2s"
-                                width="600" height="500" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-            </div>
-        </section>
         <!-- =======================
         Map END -->
 

@@ -71,7 +71,7 @@
     </script>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="{{asset('assets/images/favicon.ico')}}">
+    <link rel="shortcut icon" href="{{ Voyager::image( setting('site.favicon') )}}">
 
     <!-- Plugins CSS -->
     <link rel="stylesheet" type="text/css" href="{{asset('assets/vendor/font-awesome/css/all.min.css')}}">

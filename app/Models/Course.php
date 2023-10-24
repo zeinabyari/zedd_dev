@@ -15,6 +15,12 @@ class Course extends Model
     }
 
 
+    public function getLessonCountAttribute()
+    {
+        return CourseToLesson::query()->where('course_id', '=', $this->id)->count();
+    }
+
+
     public function teacher()
     {
         return $this->hasOne(Teacher::class, 'id', 'teacher_id');

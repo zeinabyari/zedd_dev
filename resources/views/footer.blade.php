@@ -1,4 +1,8 @@
+@php
+ $socials = \App\Models\Social::all();
+    @endphp
 <footer class="bg-dark pt-5">
+
     <div class="container">
         <!-- Row START -->
         <div class="row g-4">
@@ -7,21 +11,22 @@
             <div class="col-lg-3">
                 <!-- logo -->
                 <a class="me-0" href="{{ route('home') }}">
-                    <img class="light-mode-item h-40px" src="{{ asset('assets/images/logo-light.svg') }}" alt="logo">
-                    <img class="dark-mode-item h-40px" src="{{ asset('assets/images/logo.svg') }}" alt="logo">
+                    <img class="light-mode-item h-40px" src="{{ Voyager::image(setting('site.logo')) }}" alt="logo">
+                    <img class="dark-mode-item h-40px" src="{{ Voyager::image(setting('site.logo')) }}" alt="logo">
                 </a>
-                <p class="my-3 text-muted">شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی
-                    اساسا مورد استفاده قرار گیرد.</p>
+                <p class="my-3 text-muted">
+                  مرجع آموزش رایگان برنامه نویسی
+                </p>
+
                 <!-- Social media icon -->
                 <ul class="list-inline mb-0 mt-3">
-                    <li class="list-inline-item"><a class="btn btn-white btn-sm shadow px-2 text-facebook" href="#"><i
-                                class="fab fa-fw fa-facebook-f"></i></a></li>
-                    <li class="list-inline-item"><a class="btn btn-white btn-sm shadow px-2 text-instagram" href="#"><i
-                                class="fab fa-fw fa-instagram"></i></a></li>
-                    <li class="list-inline-item"><a class="btn btn-white btn-sm shadow px-2 text-twitter" href="#"><i
-                                class="fab fa-fw fa-twitter"></i></a></li>
-                    <li class="list-inline-item"><a class="btn btn-white btn-sm shadow px-2 text-linkedin" href="#"><i
-                                class="fab fa-fw fa-linkedin-in"></i></a></li>
+                    @foreach($socials as $social)
+                    <li class="list-inline-item">
+                        <a class="btn  btn-sm shadow px-2 text-facebook" href="{{ $social->link }}">
+                            <img src="{{ Voyager::image($social->icon) }}" class="h-50px" alt="{{ $social->name }}">
+                        </a>
+                    </li>
+                    @endforeach
                 </ul>
             </div>
             <!-- Widget 1 END -->
@@ -56,7 +61,7 @@
                     <div class="col-6 col-md-4">
                         <h5 class="mb-2 mb-md-4 text-white">لینک های سریع</h5>
                         <ul class="nav flex-column text-primary-hover">
-                         {{ menu('footer') }}
+                            {{ menu('footer') }}
                         </ul>
                     </div>
                 </div>
@@ -96,40 +101,42 @@
             <div class="container px-0">
                 <div class="d-lg-flex justify-content-between align-items-center py-3 text-center text-md-left">
                     <!-- copyright text -->
-                    <div class="text-muted text-primary-hover"> ارائه شده در سایت <a href="https://www.rtl-theme.com/"
-                                                                                     target="_blank" class="text-reset">راست
-                            چین</a></div>
+                    <div class="text-muted text-primary-hover">
+                       تمامی حقوق محفوظ است
+                        <a href="" target="_blank" class="text-reset">
+                           zedd dev
+                        </a></div>
                     <!-- copyright links-->
-                    <div class="justify-content-center mt-3 mt-lg-0">
-                        <ul class="nav list-inline justify-content-center mb-0">
-                            <li class="list-inline-item text-primary-hover">
-                                <!-- Language selector -->
-                                <div class="dropup mt-0 text-center text-sm-end">
-                                    <a class="dropdown-toggle nav-link" href="#" role="button" id="languageSwitcher"
-                                       data-bs-toggle="dropdown" aria-expanded="false">
-                                        <i class="fas fa-globe me-2"></i>زبان ها
-                                    </a>
-                                    <ul class="dropdown-menu min-w-auto" aria-labelledby="languageSwitcher">
-                                        <li><a class="dropdown-item me-4 text-body" href="#"><img class="fa-fw me-2"
-                                                                                                  src="{{ asset('assets/images/flags/uk.svg') }}"
-                                                                                                  alt="">فارسی</a></li>
-                                        <li><a class="dropdown-item me-4 text-body" href="#"><img class="fa-fw me-2"
-                                                                                                  src="{{ asset('assets/images/flags/gr.svg') }}"
-                                                                                                  alt="">انگلیسی </a>
-                                        </li>
-                                        <li><a class="dropdown-item me-4 text-body" href="#"><img class="fa-fw me-2"
-                                                                                                  src="{{ asset('assets/images/flags/sp.svg') }}"
-                                                                                                  alt="">فرانسوی</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="list-inline-item text-primary-hover"><a class="nav-link" href="#">شرایط
-                                    استفاده</a></li>
-                            <li class="list-inline-item text-primary-hover"><a class="nav-link pe-0" href="#">قوانین
-                                    سایت</a></li>
-                        </ul>
-                    </div>
+{{--                    <div class="justify-content-center mt-3 mt-lg-0">--}}
+{{--                        <ul class="nav list-inline justify-content-center mb-0">--}}
+{{--                            <li class="list-inline-item text-primary-hover">--}}
+{{--                                <!-- Language selector -->--}}
+{{--                                <div class="dropup mt-0 text-center text-sm-end">--}}
+{{--                                    <a class="dropdown-toggle nav-link" href="#" role="button" id="languageSwitcher"--}}
+{{--                                       data-bs-toggle="dropdown" aria-expanded="false">--}}
+{{--                                        <i class="fas fa-globe me-2"></i>زبان ها--}}
+{{--                                    </a>--}}
+{{--                                    <ul class="dropdown-menu min-w-auto" aria-labelledby="languageSwitcher">--}}
+{{--                                        <li><a class="dropdown-item me-4 text-body" href="#"><img class="fa-fw me-2"--}}
+{{--                                                                                                  src="{{ asset('assets/images/flags/uk.svg') }}"--}}
+{{--                                                                                                  alt="">فارسی</a></li>--}}
+{{--                                        <li><a class="dropdown-item me-4 text-body" href="#"><img class="fa-fw me-2"--}}
+{{--                                                                                                  src="{{ asset('assets/images/flags/gr.svg') }}"--}}
+{{--                                                                                                  alt="">انگلیسی </a>--}}
+{{--                                        </li>--}}
+{{--                                        <li><a class="dropdown-item me-4 text-body" href="#"><img class="fa-fw me-2"--}}
+{{--                                                                                                  src="{{ asset('assets/images/flags/sp.svg') }}"--}}
+{{--                                                                                                  alt="">فرانسوی</a>--}}
+{{--                                        </li>--}}
+{{--                                    </ul>--}}
+{{--                                </div>--}}
+{{--                            </li>--}}
+{{--                            <li class="list-inline-item text-primary-hover"><a class="nav-link" href="#">شرایط--}}
+{{--                                    استفاده</a></li>--}}
+{{--                            <li class="list-inline-item text-primary-hover"><a class="nav-link pe-0" href="#">قوانین--}}
+{{--                                    سایت</a></li>--}}
+{{--                        </ul>--}}
+{{--                    </div>--}}
                 </div>
             </div>
         </div>

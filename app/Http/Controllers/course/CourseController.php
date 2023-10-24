@@ -9,9 +9,17 @@ use Illuminate\Http\Request;
 class CourseController extends Controller
 {
 
-    public function index()
+    public function index(Request $request)
     {
-        $courses = Course::all();
+        //desc & acs
+        $courses = Course::query()->orderByDesc('id');
+        if ($request->has('search')){
+            $courses = $courses->where('title' , 'LIKE' , '%' . $request->search .'%')
+                ->orWhere('description' , 'LIKE' , '%' . $request->search .'%');
+        }
+
+        $courses = $courses->paginate(1);
+//                return response()->json($courses);
         return view('course.courses', compact('courses'));
     }
 

@@ -5,6 +5,7 @@ namespace App\Http\Controllers\pages;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\ContactRequest;
 use App\Models\Contact;
+use App\Models\Social;
 use Illuminate\Http\Request;
 
 class ContactController extends Controller
@@ -12,7 +13,8 @@ class ContactController extends Controller
 
     public function index()
     {
-        return view('pages.contact');
+        $socials = Social::all();
+        return view('pages.contact' , compact('socials'));
     }
 
 

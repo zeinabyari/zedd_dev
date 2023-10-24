@@ -4,8 +4,9 @@
         <div class="container">
             <!-- Logo START -->
             <a class="navbar-brand me-0" href="{{route('home')}}">
-                <img class="light-mode-item navbar-brand-item" src="{{asset('assets/images/logo.svg')}}" alt="logo">
-                <img class="dark-mode-item navbar-brand-item" src="{{asset('assets/images/logo-light.svg')}}"
+                <img class="light-mode-item navbar-brand-item" src="{{ Voyager::image(setting('site.logo')) }}"
+                     alt="logo">
+                <img class="dark-mode-item navbar-brand-item" src="{{Voyager::image(setting('site.logo'))}}"
                      alt="logo">
             </a>
             <!-- Logo END -->
