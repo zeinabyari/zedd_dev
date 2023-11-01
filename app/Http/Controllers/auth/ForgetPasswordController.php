@@ -40,8 +40,9 @@ class ForgetPasswordController extends Controller
     {
         $client = Client::query()->where('reset', $request->link)->firstOrFail();
         $client->password = Hash::make($request->password);
+        $client->reset_link = null;
         $client->save();
-        return view('login');
+        return redirect()->route('login');
     }
 
 
