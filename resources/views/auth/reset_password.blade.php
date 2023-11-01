@@ -71,6 +71,12 @@
                                                 {{ $message }}
                                             </span>
                                             @enderror
+
+                                            @error('link')
+                                            <span style="color: red">
+                                                {{ $message }}
+                                            </span>
+                                            @enderror
                                         </div>
                                     </div>
 
