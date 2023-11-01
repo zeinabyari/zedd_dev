@@ -68,7 +68,7 @@
                                     <!-- Button -->
                                     <div class="align-items-center">
                                         <div class="d-grid">
-                                            <button class="btn btn-primary mb-0" type="button">ارسال رمز</button>
+                                            <button class="btn btn-primary mb-0" type="button">تایید</button>
                                         </div>
                                     </div>
                                 </form>
