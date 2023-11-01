@@ -14,21 +14,21 @@
                                 <p class="mb-0 h6 fw-light">بیایید امروز چیز جدیدی یاد بگیریم!</p>
                             </div>
                             <!-- SVG Image -->
-                            <img src="assets/images/element/02.svg" class="mt-5" alt="">
+                            <img src="{{asset('assets/images/element/02.svg')}}" class="mt-5" alt="">
                             <!-- Info -->
                             <div class="d-sm-flex mt-5 align-items-center justify-content-center">
                                 <ul class="avatar-group mb-2 mb-sm-0">
                                     <li class="avatar avatar-sm"><img class="avatar-img rounded-circle"
-                                                                      src="assets/images/avatar/01.jpg" alt="avatar">
+                                                                      src="{{asset('assets/images/avatar/01.jpg')}}" alt="avatar">
                                     </li>
                                     <li class="avatar avatar-sm"><img class="avatar-img rounded-circle"
-                                                                      src="assets/images/avatar/02.jpg" alt="avatar">
+                                                                      src="{{asset('assets/images/avatar/02.jpg')}}" alt="avatar">
                                     </li>
                                     <li class="avatar avatar-sm"><img class="avatar-img rounded-circle"
-                                                                      src="assets/images/avatar/03.jpg" alt="avatar">
+                                                                      src="{{asset('assets/images/avatar/03.jpg')}}" alt="avatar">
                                     </li>
                                     <li class="avatar avatar-sm"><img class="avatar-img rounded-circle"
-                                                                      src="assets/images/avatar/04.jpg" alt="avatar">
+                                                                      src="{{asset('assets/images/avatar/04.jpg')}}" alt="avatar">
                                     </li>
                                 </ul>
                                 <!-- Content -->
@@ -48,8 +48,39 @@
                                 <h5 class="fw-light mb-4">برای ثبت نام، لطفاً اطلاعات زیر را وارد کنید:</h5>
 
                                 <!-- Form START -->
-                                <form>
-                                    <!-- Email -->
+                                <form action="{{ route('register_post') }}  " method="post">
+                                    @csrf
+                                    <div class="mb-4">
+                                        <label for="exampleInputEmail1" class="form-label">نام *</label>
+                                        <div class="input-group input-group-lg">
+                                            <span
+                                                class="input-group-text bg-light rounded-start border-0 text-secondary px-3"><i
+                                                    class="bi bi-envelope-fill"></i></span>
+                                            <input class="form-control border-0 bg-light rounded-end ps-1" name="name"
+                                                   placeholder="نام شما" id="exampleInputEmail1">
+                                        </div>
+                                    </div>
+                                    @error('name')
+                                    <span style="color: red">
+                                        {{ $message }}
+                                    </span>
+                                    @enderror
+
+                                    <div class="mb-4">
+                                        <label for="exampleInputEmail1" class="form-label">موبایل</label>
+                                        <div class="input-group input-group-lg">
+                                            <span
+                                                class="input-group-text bg-light rounded-start border-0 text-secondary px-3"><i
+                                                    class="bi bi-envelope-fill"></i></span>
+                                            <input class="form-control border-0 bg-light rounded-end ps-1"
+                                                   placeholder="09121112233" id="exampleInputEmail1" name="phone">
+                                        </div>
+                                    </div>
+                                    @error('phone')
+                                    <span style="color: red">
+                                        {{ $message }}
+                                    </span>
+                                    @enderror
                                     <div class="mb-4">
                                         <label for="exampleInputEmail1" class="form-label">ایمیل *</label>
                                         <div class="input-group input-group-lg">
@@ -57,9 +88,15 @@
                                                 class="input-group-text bg-light rounded-start border-0 text-secondary px-3"><i
                                                     class="bi bi-envelope-fill"></i></span>
                                             <input type="email" class="form-control border-0 bg-light rounded-end ps-1"
-                                                   placeholder="***@gmail.com" id="exampleInputEmail1">
+                                                   placeholder="***@gmail.com" id="exampleInputEmail1" name="email">
                                         </div>
                                     </div>
+
+                                    @error('email')
+                                    <span style="color: red">
+                                        {{ $message }}
+                                    </span>
+                                    @enderror
                                     <!-- Password -->
                                     <div class="mb-4">
                                         <label for="password" class="form-label">رمز عبور *</label>
@@ -68,9 +105,15 @@
                                                 class="input-group-text bg-light rounded-start border-0 text-secondary px-3"><i
                                                     class="bi bi-lock-fill"></i></span>
                                             <input type="password" class="form-control border-0 bg-light rounded-end ps-1"
-                                                   placeholder="رمز عبور" id="password">
+                                                   placeholder="رمز عبور" id="password" name="password">
                                         </div>
                                     </div>
+
+                                    @error('password')
+                                    <span style="color: red">
+                                        {{ $message }}
+                                    </span>
+                                    @enderror
                                     <!-- Retry Password -->
                                     <div class="mb-4">
                                         <label for="retryPassword" class="form-label">تکرار رمز عبور *</label>
@@ -79,13 +122,18 @@
                                                 class="input-group-text bg-light rounded-start border-0 text-secondary px-3"><i
                                                     class="bi bi-lock-fill"></i></span>
                                             <input type="password" class="form-control border-0 bg-light rounded-end ps-1"
-                                                   placeholder="تکرار رمز عبور" id="retryPassword">
+                                                   placeholder="تکرار رمز عبور" id="retryPassword" name="retryPassword">
                                         </div>
                                     </div>
+                                    @error('retryPassword')
+                                    <span style="color: red">
+                                        {{ $message }}
+                                    </span>
+                                    @enderror
                                     <!-- Register Button -->
                                     <div class="align-items-center">
                                         <div class="d-grid">
-                                            <button class="btn btn-primary mb-0" type="button">ثبت نام</button>
+                                            <button class="btn btn-primary mb-0" type="submit">ثبت نام</button>
                                         </div>
                                     </div>
                                 </form>
