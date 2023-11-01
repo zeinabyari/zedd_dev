@@ -38,7 +38,7 @@ class ForgetPasswordController extends Controller
 
     public function store(ResetPasswordRequest $request)
     {
-        $client = Client::query()->where('reset', $request->link)->firstOrFail();
+        $client = Client::query()->where('reset_link', $request->link)->firstOrFail();
         $client->password = Hash::make($request->password);
         $client->reset_link = null;
         $client->save();
