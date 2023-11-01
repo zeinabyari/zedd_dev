@@ -53,6 +53,13 @@
                                 <h5 class="fw-light mb-4">برای دریافت رمز عبور جدید، آدرس ایمیل خود را وارد کنید.</h5>
 
                                 <!-- Form START -->
+
+
+                                @if(Session::has('success'))
+                                    <span style="color: #0a966c">
+                            {!! Session::get('success') !!}
+                        </span>
+                                @endif
                                 <form method="post">
                                     @csrf
                                     <!-- Email -->

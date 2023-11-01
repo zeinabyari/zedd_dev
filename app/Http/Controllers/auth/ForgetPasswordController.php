@@ -4,9 +4,11 @@ namespace App\Http\Controllers\auth;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\ForgetPasswordRequest;
+use App\Http\Requests\ResetPasswordRequest;
 use App\Mail\forgetPassword;
 use App\Models\Client;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Mail;
 
 class ForgetPasswordController extends Controller
@@ -25,11 +27,21 @@ class ForgetPasswordController extends Controller
         $client->save();
 
         Mail::to(['email' => $client->email])->send(new forgetPassword($link));
+
+        return redirect()->back()->with('success', 'لینک بازیابی رمزعبور برای شما ارسال شد');
     }
 
-    public function store(Request $request)
+    public function reset_password($link)
     {
-        return view('auth.reset_password');
+        return view('auth.reset_password', compact('link'));
+    }
+
+    public function store(ResetPasswordRequest $request)
+    {
+        $client = Client::query()->where('reset', $request->link)->firstOrFail();
+        $client->password = Hash::make($request->password);
+        $client->save();
+        return view('login');
     }
 
 

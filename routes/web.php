@@ -31,7 +31,10 @@ Route::get('/single_course/{slug}', [CourseController::class, 'show'])->name('si
 Route::prefix('auth')->group(function () {
     Route::get('/forget_password', [ForgetPasswordController::class, 'index'])->name('forget_password');
     Route::post('/forget_password', [ForgetPasswordController::class, 'update'])->name('forget_password_post');
-    Route::get('/reset_password/{link}', [ForgetPasswordController::class, 'store'])->name('reset_password');
+
+
+    Route::get('/reset_password/{link}', [ForgetPasswordController::class, 'reset_password'])->name('reset_password');
+    Route::post('/reset_password', [ForgetPasswordController::class, 'store'])->name('reset_password_post');
 
     Route::get('/login', [LoginController::class, 'index'])->name('login');
     Route::post('/login', [LoginController::class, 'store'])->name('login_post');

@@ -53,8 +53,10 @@
                                 <h5 class="fw-light mb-4">برای دریافت رمز عبور جدید،جزیات خواسته شده را وارد کنید</h5>
 
                                 <!-- Form START -->
-                                <form>
+                                <form method="post" action="{{ route('reset_password_post') }}">
+                                    @csrf
                                     <div class="mb-4">
+                                        <input name="link" value="{{ $link }}" type="hidden">
                                         <label for="password" class="form-label">رمز عبور جدید *</label>
 
                                         <div class="input-group input-group-lg">
@@ -64,6 +66,11 @@
                                             <input type="password"
                                                    class="form-control border-0 bg-light rounded-end ps-1"
                                                    placeholder="رمز عبور جدید" id="password" name="password">
+                                            @error('password')
+                                            <span style="color: red">
+                                                {{ $message }}
+                                            </span>
+                                            @enderror
                                         </div>
                                     </div>
 
@@ -76,13 +83,18 @@
                                                 class="bi bi-lock-fill"></i></span>
                                             <input type="password"
                                                    class="form-control border-0 bg-light rounded-end ps-1"
-                                                   placeholder="تکرار رمز عبور *" id="password" name="password">
+                                                   placeholder="تکرار رمز عبور *" id="password" name="retryPassword">
+                                            @error('retryPassword')
+                                            <span style="color: red">
+                                                {{ $message }}
+                                            </span>
+                                            @enderror
                                         </div>
                                     </div>
                                     <!-- Button -->
                                     <div class="align-items-center">
                                         <div class="d-grid">
-                                            <button class="btn btn-primary mb-0" type="button">تایید</button>
+                                            <button class="btn btn-primary mb-0" type="submit">تایید</button>
                                         </div>
                                     </div>
                                 </form>
