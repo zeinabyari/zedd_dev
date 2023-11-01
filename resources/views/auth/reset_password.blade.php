@@ -48,21 +48,35 @@
                             <div class="col-sm-10 col-xl-12 m-auto">
 
                                 <!-- Title -->
-                                <span class="mb-0 fs-1">🤔</span>
-                                <h1 class="fs-4">فراموشی رمز عبور</h1>
-                                <h5 class="fw-light mb-4">برای دریافت رمز عبور جدید، آدرس ایمیل خود را وارد کنید.</h5>
+                                <span class="mb-0 fs-1">🔓</span>
+                                <h1 class="fs-4">بازیابی رمز عبور</h1>
+                                <h5 class="fw-light mb-4">برای دریافت رمز عبور جدید،جزیات خواسته شده را وارد کنید</h5>
 
                                 <!-- Form START -->
                                 <form>
-                                    <!-- Email -->
                                     <div class="mb-4">
-                                        <label for="exampleInputEmail1" class="form-label">ایمیل *</label>
+                                        <label for="password" class="form-label">رمز عبور جدید *</label>
+
                                         <div class="input-group input-group-lg">
-                                            <span
-                                                class="input-group-text bg-light rounded-start border-0 text-secondary px-3"><i
-                                                    class="bi bi-envelope-fill"></i></span>
-                                            <input type="email" class="form-control border-0 bg-light rounded-end ps-1"
-                                                   placeholder="***@gmail.com" id="exampleInputEmail1">
+                                        <span
+                                            class="input-group-text bg-light rounded-start border-0 text-secondary px-3"><i
+                                                class="bi bi-lock-fill"></i></span>
+                                            <input type="password"
+                                                   class="form-control border-0 bg-light rounded-end ps-1"
+                                                   placeholder="رمز عبور جدید" id="password" name="password">
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-4">
+                                        <label for="password" class="form-label">تکرار رمز عبور*</label>
+
+                                        <div class="input-group input-group-lg">
+                                        <span
+                                            class="input-group-text bg-light rounded-start border-0 text-secondary px-3"><i
+                                                class="bi bi-lock-fill"></i></span>
+                                            <input type="password"
+                                                   class="form-control border-0 bg-light rounded-end ps-1"
+                                                   placeholder="تکرار رمز عبور *" id="password" name="password">
                                         </div>
                                     </div>
                                     <!-- Button -->

@@ -76,7 +76,13 @@
                                     @enderror
                                     <!-- Password -->
                                     <div class="mb-4">
-                                        <label for="password" class="form-label">رمز عبور *</label>
+                                        <div style="display: flex;justify-content: space-between;">
+                                            <label for="password" class="form-label">رمز عبور *</label>
+                                            <a style="color: blue" href="{{ route('forget_password') }}">
+                                                فراموشی رمز عبور
+                                            </a>
+                                        </div>
+
                                         <div class="input-group input-group-lg">
                                         <span
                                             class="input-group-text bg-light rounded-start border-0 text-secondary px-3"><i
@@ -97,13 +103,19 @@
                                             <button class="btn btn-primary mb-0" type="submit">ورود</button>
                                         </div>
                                     </div>
+                                    <div style="display: flex; justify-content: center ; margin-top: 10px">
+                                        حساب کاربری ندارید ؟
+                                        <a style="color: blue" href="{{ route('register') }}">
+                                            ثبت نام
+                                        </a>
+                                    </div>
                                 </form>
                                 <!-- Form END -->
 
                                 <!-- Login by Google Button -->
-                                <div class="text-center mt-4">
-                                    <button class="btn btn-danger">ورود با گوگل</button>
-                                </div>
+                                {{--                                <div class="text-center mt-4">--}}
+                                {{--                                    <button class="btn btn-danger">ورود با گوگل</button>--}}
+                                {{--                                </div>--}}
                             </div>
                         </div> <!-- Row END -->
                     </div>
