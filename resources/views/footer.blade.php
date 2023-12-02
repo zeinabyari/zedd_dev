@@ -1,143 +1,35 @@
 @php
  $socials = \App\Models\Social::all();
     @endphp
-<footer class="bg-dark pt-5">
 
+<footer class="bg-dark p-3">
     <div class="container">
-        <!-- Row START -->
-        <div class="row g-4">
+        <div class="row align-items-center">
+            <!-- Widget -->
+            <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+                <!-- Logo START -->
+                <a href="{{ route('home') }}"> <img class="h-30px" src="{{ Voyager::image(setting('site.logo')) }}" alt="logo"> </a>
+            </div>
 
-            <!-- Widget 1 START -->
-            <div class="col-lg-3">
-                <!-- logo -->
-                <a class="me-0" href="{{ route('home') }}">
-                    <img class="light-mode-item h-40px" src="{{ Voyager::image(setting('site.logo')) }}" alt="logo">
-                    <img class="dark-mode-item h-40px" src="{{ Voyager::image(setting('site.logo')) }}" alt="logo">
-                </a>
-                <p class="my-3 text-muted">
-                  مرجع آموزش رایگان برنامه نویسی
-                </p>
-
-                <!-- Social media icon -->
-                <ul class="list-inline mb-0 mt-3">
+            <!-- Widget -->
+            <div class="col-md-4 mb-3 mb-md-0">
+                <div class="text-center text-white">
+                    تمامی حقوق برای این سایت محفوظ می باشد
+{{--                    <a href="https://www.rtl-theme.com/" target="_blank" class="text-reset btn-link">راست چین</a>--}}
+                </div>
+            </div>
+            <!-- Widget -->
+            <div class="col-md-4">
+                <!-- Rating -->
+                <ul class="list-inline mb-0 text-center text-md-end">
                     @foreach($socials as $social)
-                    <li class="list-inline-item">
-                        <a class="btn  btn-sm shadow px-2 text-facebook" href="{{ $social->link }}">
-                            <img src="{{ Voyager::image($social->icon) }}" class="h-50px" alt="{{ $social->name }}">
-                        </a>
-                    </li>
+                        <li class="list-inline-item ms-2">
+                            <a class="btn  btn-sm shadow px-2 text-facebook" href="{{ $social->link }}">
+                                <img src="{{ Voyager::image($social->icon) }}" class="h-40px" alt="{{ $social->name }}">
+                            </a>
+                        </li>
                     @endforeach
                 </ul>
-            </div>
-            <!-- Widget 1 END -->
-
-            <!-- Widget 2 START -->
-            <div class="col-lg-6">
-                <div class="row g-4">
-                    <!-- Link block -->
-                    <div class="col-6 col-md-4">
-                        <h5 class="mb-2 mb-md-4 text-white">لینک های مفید</h5>
-                        <ul class="nav flex-column text-primary-hover">
-                            <li class="nav-item"><a class="nav-link" href="#">درباره ما</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">تماس با ما</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">وبلاگ</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">تسویه حساب</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">سوالات متداول</a></li>
-                        </ul>
-                    </div>
-
-                    <!-- Link block -->
-                    <div class="col-6 col-md-4">
-                        <h5 class="mb-2 mb-md-4 text-white">راهنما و پشتیبانی</h5>
-                        <ul class="nav flex-column text-primary-hover">
-                            <li class="nav-item"><a class="nav-link" href="#">داکیومنت</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">ارسال تیکت</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">خرید دوره</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">نقشه سایت</a></li>
-                        </ul>
-                    </div>
-
-                    <!-- Link block -->
-                    <div class="col-6 col-md-4">
-                        <h5 class="mb-2 mb-md-4 text-white">لینک های سریع</h5>
-                        <ul class="nav flex-column text-primary-hover">
-                            {{ menu('footer') }}
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <!-- Widget 2 END -->
-
-            <!-- Widget 3 START -->
-            <div class="col-lg-3">
-                <h5 class="mb-2 mb-md-4 text-white">تماس با ما</h5>
-                <!-- Time -->
-                <p class="mb-2 text-muted">
-                    تلفن: <span class="h6 fw-light ms-2 text-white">{{ setting('contact.phone') }}</span>
-                    <span class="d-block small">(9:00 تا 17:00 بعداز ظهر)</span>
-                </p>
-
-                <p class="mb-0 text-muted">ایمیل:<span class="h6 fw-light text-white ms-2">example@gmail.com</span></p>
-
-                <div class="row g-2 mt-2">
-                    <!-- Google play store button -->
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-6">
-                        <a href="#"> <img src="{{ asset('assets/images/client/google-play.svg') }}" alt=""> </a>
-                    </div>
-                    <!-- App store button -->
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-6">
-                        <a href="#"> <img src="{{ asset('assets/images/client/app-store.svg') }}" alt="app-store"> </a>
-                    </div>
-                </div> <!-- Row END -->
-            </div>
-            <!-- Widget 3 END -->
-        </div><!-- Row END -->
-
-        <!-- Divider -->
-        <hr class="mt-4 mb-0">
-
-        <!-- Bottom footer -->
-        <div class="py-3">
-            <div class="container px-0">
-                <div class="d-lg-flex justify-content-between align-items-center py-3 text-center text-md-left">
-                    <!-- copyright text -->
-                    <div class="text-muted text-primary-hover">
-                       تمامی حقوق محفوظ است
-                        <a href="" target="_blank" class="text-reset">
-                           zedd dev
-                        </a></div>
-                    <!-- copyright links-->
-{{--                    <div class="justify-content-center mt-3 mt-lg-0">--}}
-{{--                        <ul class="nav list-inline justify-content-center mb-0">--}}
-{{--                            <li class="list-inline-item text-primary-hover">--}}
-{{--                                <!-- Language selector -->--}}
-{{--                                <div class="dropup mt-0 text-center text-sm-end">--}}
-{{--                                    <a class="dropdown-toggle nav-link" href="#" role="button" id="languageSwitcher"--}}
-{{--                                       data-bs-toggle="dropdown" aria-expanded="false">--}}
-{{--                                        <i class="fas fa-globe me-2"></i>زبان ها--}}
-{{--                                    </a>--}}
-{{--                                    <ul class="dropdown-menu min-w-auto" aria-labelledby="languageSwitcher">--}}
-{{--                                        <li><a class="dropdown-item me-4 text-body" href="#"><img class="fa-fw me-2"--}}
-{{--                                                                                                  src="{{ asset('assets/images/flags/uk.svg') }}"--}}
-{{--                                                                                                  alt="">فارسی</a></li>--}}
-{{--                                        <li><a class="dropdown-item me-4 text-body" href="#"><img class="fa-fw me-2"--}}
-{{--                                                                                                  src="{{ asset('assets/images/flags/gr.svg') }}"--}}
-{{--                                                                                                  alt="">انگلیسی </a>--}}
-{{--                                        </li>--}}
-{{--                                        <li><a class="dropdown-item me-4 text-body" href="#"><img class="fa-fw me-2"--}}
-{{--                                                                                                  src="{{ asset('assets/images/flags/sp.svg') }}"--}}
-{{--                                                                                                  alt="">فرانسوی</a>--}}
-{{--                                        </li>--}}
-{{--                                    </ul>--}}
-{{--                                </div>--}}
-{{--                            </li>--}}
-{{--                            <li class="list-inline-item text-primary-hover"><a class="nav-link" href="#">شرایط--}}
-{{--                                    استفاده</a></li>--}}
-{{--                            <li class="list-inline-item text-primary-hover"><a class="nav-link pe-0" href="#">قوانین--}}
-{{--                                    سایت</a></li>--}}
-{{--                        </ul>--}}
-{{--                    </div>--}}
-                </div>
             </div>
         </div>
     </div>

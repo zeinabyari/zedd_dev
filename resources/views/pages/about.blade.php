@@ -265,9 +265,14 @@
 
                         <!-- Content -->
                         <p>
-                            من سایت های خیلی زیادی رو با لاراول و نود جی اس زدم
-                            و میتونم این ادعا رو داشته باشم که هر باگی رو میتونم به راحتی حل کنم توی هرکدوم از اینا
-
+                            یه روزی که از کارهام خسته شدم بودم و داشتم فکر میکردم که چیکار میتونم بکنم که
+                            هم به بقیه یه کمکی کرده باشم و هم به نفع خودم تموم بشه
+                            این شد که تصمیم گرفتم کانال یوتیوب خودم رو راه اندازی کنم
+                            اینجوری هم میتونستم به هدفم که کمک به بقیه بود برسم
+                            هم یه درآمدی برای خودم باشه
+                            برای همین کلی آموزش رایگان برنامه نویسی رو توی کانال یوتیوبم قرار دادم و
+                            با گذشت زمان بزرگ و بزرگ تر میشیم و آموزش های بیشتری میذاریم
+                            امیدوارم که ویدیوهام براتون مفید باشه
                         </p>
 
 {{--                        <p>چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی--}}
@@ -293,67 +298,67 @@
 {{--                        </ul>--}}
 
                         <!-- Progress bar START -->
-                        <div class="row mt-3 g-4">
-                            <!-- Progress item -->
-                            <div class="col-md-6">
-                                <div class="overflow-hidden">
-                                    <h6>لاراول</h6>
-                                    <div class="progress progress-sm bg-primary bg-opacity-10">
-                                        <div class="progress-bar bg-primary aos" role="progressbar"
-                                             data-aos="slide-left" data-aos-delay="200" data-aos-duration="1000"
-                                             data-aos-easing="ease-in-out" style="width: 100%" aria-valuenow="85"
-                                             aria-valuemin="0" aria-valuemax="100">
-                                            <span class="progress-percent-simple ms-auto h6 fw-light">100%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+{{--                        <div class="row mt-3 g-4">--}}
+{{--                            <!-- Progress item -->--}}
+{{--                            <div class="col-md-6">--}}
+{{--                                <div class="overflow-hidden">--}}
+{{--                                    <h6>لاراول</h6>--}}
+{{--                                    <div class="progress progress-sm bg-primary bg-opacity-10">--}}
+{{--                                        <div class="progress-bar bg-primary aos" role="progressbar"--}}
+{{--                                             data-aos="slide-left" data-aos-delay="200" data-aos-duration="1000"--}}
+{{--                                             data-aos-easing="ease-in-out" style="width: 100%" aria-valuenow="85"--}}
+{{--                                             aria-valuemin="0" aria-valuemax="100">--}}
+{{--                                            <span class="progress-percent-simple ms-auto h6 fw-light">100%</span>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
 
-                            <!-- Progress item -->
-                            <div class="col-md-6">
-                                <div class="overflow-hidden">
-                                    <h6>دوره های به روز</h6>
-                                    <div class="progress progress-sm bg-primary bg-opacity-10">
-                                        <div class="progress-bar bg-primary aos" role="progressbar"
-                                             data-aos="slide-left" data-aos-delay="200" data-aos-duration="1000"
-                                             data-aos-easing="ease-in-out" style="width: 90%;" aria-valuenow="90"
-                                             aria-valuemin="0" aria-valuemax="100">
-                                            <span class="progress-percent-simple ms-auto h6 fw-light">90%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+{{--                            <!-- Progress item -->--}}
+{{--                            <div class="col-md-6">--}}
+{{--                                <div class="overflow-hidden">--}}
+{{--                                    <h6>دوره های به روز</h6>--}}
+{{--                                    <div class="progress progress-sm bg-primary bg-opacity-10">--}}
+{{--                                        <div class="progress-bar bg-primary aos" role="progressbar"--}}
+{{--                                             data-aos="slide-left" data-aos-delay="200" data-aos-duration="1000"--}}
+{{--                                             data-aos-easing="ease-in-out" style="width: 90%;" aria-valuenow="90"--}}
+{{--                                             aria-valuemin="0" aria-valuemax="100">--}}
+{{--                                            <span class="progress-percent-simple ms-auto h6 fw-light">90%</span>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
 
-                            <!-- Progress item -->
-                            <div class="col-md-6">
-                                <div class="overflow-hidden">
-                                    <h6>زبان ها</h6>
-                                    <div class="progress progress-sm bg-primary bg-opacity-10">
-                                        <div class="progress-bar bg-primary aos" role="progressbar"
-                                             data-aos="slide-left" data-aos-delay="200" data-aos-duration="1000"
-                                             data-aos-easing="ease-in-out" style="width: 75%;" aria-valuenow="75"
-                                             aria-valuemin="0" aria-valuemax="100">
-                                            <span class="progress-percent-simple ms-auto h6 fw-light">75%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+{{--                            <!-- Progress item -->--}}
+{{--                            <div class="col-md-6">--}}
+{{--                                <div class="overflow-hidden">--}}
+{{--                                    <h6>زبان ها</h6>--}}
+{{--                                    <div class="progress progress-sm bg-primary bg-opacity-10">--}}
+{{--                                        <div class="progress-bar bg-primary aos" role="progressbar"--}}
+{{--                                             data-aos="slide-left" data-aos-delay="200" data-aos-duration="1000"--}}
+{{--                                             data-aos-easing="ease-in-out" style="width: 75%;" aria-valuenow="75"--}}
+{{--                                             aria-valuemin="0" aria-valuemax="100">--}}
+{{--                                            <span class="progress-percent-simple ms-auto h6 fw-light">75%</span>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
 
-                            <!-- Progress item -->
-                            <div class="col-md-6">
-                                <div class="overflow-hidden">
-                                    <h6>مدرسان</h6>
-                                    <div class="progress progress-sm bg-primary bg-opacity-10">
-                                        <div class="progress-bar bg-primary aos" role="progressbar"
-                                             data-aos="slide-left" data-aos-delay="200" data-aos-duration="1000"
-                                             data-aos-easing="ease-in-out" style="width: 95%;" aria-valuenow="95"
-                                             aria-valuemin="0" aria-valuemax="100">
-                                            <span class="progress-percent-simple ms-auto h6 fw-light">95%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+{{--                            <!-- Progress item -->--}}
+{{--                            <div class="col-md-6">--}}
+{{--                                <div class="overflow-hidden">--}}
+{{--                                    <h6>مدرسان</h6>--}}
+{{--                                    <div class="progress progress-sm bg-primary bg-opacity-10">--}}
+{{--                                        <div class="progress-bar bg-primary aos" role="progressbar"--}}
+{{--                                             data-aos="slide-left" data-aos-delay="200" data-aos-duration="1000"--}}
+{{--                                             data-aos-easing="ease-in-out" style="width: 95%;" aria-valuenow="95"--}}
+{{--                                             aria-valuemin="0" aria-valuemax="100">--}}
+{{--                                            <span class="progress-percent-simple ms-auto h6 fw-light">95%</span>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
                         <!-- Progress bar END -->
                     </div>
                 </div>
@@ -364,78 +369,78 @@
 
         <!-- =======================
         Client START -->
-        <section class="bg-light">
-            <div class="container">
-                <div class="row d-flex justify-content-center">
-                    <!-- Logo item -->
-                    <div class="col-6 col-sm-4 col-lg-2">
-                        <div class="p-4 grayscale text-center">
-                            <img src="assets/images/client/microsoft.svg" alt="">
-                        </div>
-                    </div>
-                    <!-- Logo item -->
-                    <div class="col-6 col-sm-4 col-lg-2">
-                        <div class="p-4 grayscale text-center">
-                            <img src="assets/images/client/linkedin.svg" alt="">
-                        </div>
-                    </div>
-                    <!-- Logo item -->
-                    <div class="col-6 col-sm-4 col-lg-2">
-                        <div class="p-4 grayscale text-center">
-                            <img src="assets/images/client/netflix.svg" alt="">
-                        </div>
-                    </div>
-                    <!-- Logo item -->
-                    <div class="col-6 col-sm-4 col-lg-2">
-                        <div class="p-4 grayscale text-center">
-                            <img src="assets/images/client/coca-cola.svg" alt="">
-                        </div>
-                    </div>
-                    <!-- Logo item -->
-                    <div class="col-6 col-sm-4 col-lg-2">
-                        <div class="p-4 grayscale text-center">
-                            <img src="assets/images/client/envato.svg" alt="">
-                        </div>
-                    </div>
-                    <!-- Logo item -->
-                    <div class="col-6 col-sm-4 col-lg-2">
-                        <div class="p-4 grayscale text-center">
-                            <img src="assets/images/client/android.svg" alt="">
-                        </div>
-                    </div>
-                    <!-- Logo item -->
-                    <div class="col-6 col-sm-4 col-lg-2">
-                        <div class="p-4 grayscale text-center">
-                            <img src="assets/images/client/coca-cola.svg" alt="">
-                        </div>
-                    </div>
-                    <!-- Logo item -->
-                    <div class="col-6 col-sm-4 col-lg-2">
-                        <div class="p-4 grayscale text-center">
-                            <img src="assets/images/client/shippable.svg" alt="">
-                        </div>
-                    </div>
-                    <!-- Logo item -->
-                    <div class="col-6 col-sm-4 col-lg-2">
-                        <div class="p-4 grayscale text-center">
-                            <img src="assets/images/client/algolia.svg" alt="">
-                        </div>
-                    </div>
-                    <!-- Logo item -->
-                    <div class="col-6 col-sm-4 col-lg-2">
-                        <div class="p-4 grayscale text-center">
-                            <img src="assets/images/client/importio.svg" alt="">
-                        </div>
-                    </div>
-                    <!-- Logo item -->
-                    <div class="col-6 col-sm-4 col-lg-2">
-                        <div class="p-4 grayscale text-center">
-                            <img src="assets/images/client/yamaha.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+{{--        <section class="bg-light">--}}
+{{--            <div class="container">--}}
+{{--                <div class="row d-flex justify-content-center">--}}
+{{--                    <!-- Logo item -->--}}
+{{--                    <div class="col-6 col-sm-4 col-lg-2">--}}
+{{--                        <div class="p-4 grayscale text-center">--}}
+{{--                            <img src="assets/images/client/microsoft.svg" alt="">--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <!-- Logo item -->--}}
+{{--                    <div class="col-6 col-sm-4 col-lg-2">--}}
+{{--                        <div class="p-4 grayscale text-center">--}}
+{{--                            <img src="assets/images/client/linkedin.svg" alt="">--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <!-- Logo item -->--}}
+{{--                    <div class="col-6 col-sm-4 col-lg-2">--}}
+{{--                        <div class="p-4 grayscale text-center">--}}
+{{--                            <img src="assets/images/client/netflix.svg" alt="">--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <!-- Logo item -->--}}
+{{--                    <div class="col-6 col-sm-4 col-lg-2">--}}
+{{--                        <div class="p-4 grayscale text-center">--}}
+{{--                            <img src="assets/images/client/coca-cola.svg" alt="">--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <!-- Logo item -->--}}
+{{--                    <div class="col-6 col-sm-4 col-lg-2">--}}
+{{--                        <div class="p-4 grayscale text-center">--}}
+{{--                            <img src="assets/images/client/envato.svg" alt="">--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <!-- Logo item -->--}}
+{{--                    <div class="col-6 col-sm-4 col-lg-2">--}}
+{{--                        <div class="p-4 grayscale text-center">--}}
+{{--                            <img src="assets/images/client/android.svg" alt="">--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <!-- Logo item -->--}}
+{{--                    <div class="col-6 col-sm-4 col-lg-2">--}}
+{{--                        <div class="p-4 grayscale text-center">--}}
+{{--                            <img src="assets/images/client/coca-cola.svg" alt="">--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <!-- Logo item -->--}}
+{{--                    <div class="col-6 col-sm-4 col-lg-2">--}}
+{{--                        <div class="p-4 grayscale text-center">--}}
+{{--                            <img src="assets/images/client/shippable.svg" alt="">--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <!-- Logo item -->--}}
+{{--                    <div class="col-6 col-sm-4 col-lg-2">--}}
+{{--                        <div class="p-4 grayscale text-center">--}}
+{{--                            <img src="assets/images/client/algolia.svg" alt="">--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <!-- Logo item -->--}}
+{{--                    <div class="col-6 col-sm-4 col-lg-2">--}}
+{{--                        <div class="p-4 grayscale text-center">--}}
+{{--                            <img src="assets/images/client/importio.svg" alt="">--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <!-- Logo item -->--}}
+{{--                    <div class="col-6 col-sm-4 col-lg-2">--}}
+{{--                        <div class="p-4 grayscale text-center">--}}
+{{--                            <img src="assets/images/client/yamaha.svg" alt="">--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </section>--}}
         <!-- =======================
         Client END -->
 

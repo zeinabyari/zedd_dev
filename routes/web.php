@@ -4,6 +4,7 @@ use App\Http\Controllers\auth\ForgetPasswordController;
 use App\Http\Controllers\auth\LoginController;
 use App\Http\Controllers\auth\RegisterController;
 use App\Http\Controllers\course\CourseController;
+use App\Http\Controllers\dashboard\SettingController;
 use App\Http\Controllers\pages\AboutController;
 use App\Http\Controllers\pages\ContactController;
 use App\Http\Controllers\pages\HomeController;
@@ -18,7 +19,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
-Route::get('/about', AboutController::class)->name('about')->middleware('client_login');
+Route::get('/about', AboutController::class)->name('about');
 
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');
 Route::post('/contact', [ContactController::class, 'store'])->name('contact_post');
@@ -42,6 +43,12 @@ Route::prefix('auth')->group(function () {
 
     Route::get('/register', [RegisterController::class, 'index'])->name('register');
     Route::post('/register', [RegisterController::class, 'store'])->name('register_post');
+});
+
+Route::prefix('profile')->middleware('client_login')->group(function () {
+    Route::get('/', [SettingController::class, 'index'])->name('dashboard');
+    Route::post('/', [SettingController::class, 'update'])->name('profile_edit');
+
 });
 
 

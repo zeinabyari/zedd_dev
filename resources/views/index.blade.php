@@ -86,6 +86,12 @@
 </head>
 
 <body>
+<!-- Pre loader -->
+<div class="preloader">
+    <div class="preloader-item">
+        <div class="spinner-grow text-primary"></div>
+    </div>
+</div>
 
 <!-- Header START -->
 @include('header')

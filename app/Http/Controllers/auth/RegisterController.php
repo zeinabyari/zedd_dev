@@ -28,7 +28,7 @@ class RegisterController extends Controller
 
        auth()->guard('clients')->login($client);
 
-        return redirect()->route('home');
+        return redirect()->route('dashboard' );
     }
 
 }

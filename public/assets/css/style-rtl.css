@@ -21,7 +21,7 @@
 @font-face {
 	font-family: vazir-bold;
 	src: url('../fonts/vazir/vazir-Bold.eot');
-	src: url('../fonts/vazir/vazir-Blod.eot') format('embedded-opentype'), url('../fonts/vazir/Vazir-Bold-FD.woff') format('woff'), url('../fonts/vazir/vazir-Bold.ttf') format('truetype');
+	/*src: url('../fonts/vazir/vazir-Blod.eot') format('embedded-opentype'), url('../fonts/vazir/Vazir-Bold-FD.woff') format('woff'), url('../fonts/vazir/vazir-Bold.ttf') format('truetype');*/
 	font-weight: 400;
 	font-style: normal
 }
@@ -21533,7 +21533,7 @@ a.text-primary-hover:hover, button.text-primary-hover:hover {
 
 @media (min-width: 1200px) {
   .page-content {
-    margin-right: 16.25rem;
+    /*margin-right: 16.25rem;*/
   }
 }
 @media (max-width: 575.98px) {
@@ -22287,6 +22287,13 @@ svg#Capa_1 {
 .upload-button{
 	border: 1px solid var(--bs-gray-300);
 }
+
+.changeAccountDetail{
+    max-width: 400px;
+    margin: auto;
+}
+
+
 
 /*User CSS*/
 /*# sourceMappingURL=style-rtl.css.map */

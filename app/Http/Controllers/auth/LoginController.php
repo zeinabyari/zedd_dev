@@ -33,7 +33,7 @@ class LoginController extends Controller
         } else
             throw ValidationException::withMessages(['password' => 'رمزعبور اشتباه است']);
 
-        return redirect()->route('home');
+        return redirect()->route('dashboard');
     }
 
 }
