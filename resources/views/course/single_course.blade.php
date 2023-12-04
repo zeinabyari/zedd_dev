@@ -1,25 +1,85 @@
 @extends('index')
+@section('meta')
+    <title>{{ $course->title }} - zedd dev</title>
+    <meta name="description" content="{{ $course->title }} - {{ $course->meta_desc }}">
+
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "خانه",
+                    "item": "{{ url('/') }}"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "دوره‌ها",
+                    "item": "{{ url('/courses') }}"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "{{ $course->title }}",
+                    "item": "{{ url('/courses/' . $course->slug) }}"
+                }
+            ]
+        }
+
+    </script>
+
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Course",
+            "name": "{{ $course->title }}",
+            "description": "{{ $course->description }}",
+            "url": "{{ url('/courses/' . $course->slug) }}",
+            "provider": {
+                "@type": "Organization",
+                "name": "zedd dev"
+            },
+            "inLanguage": "fa",
+            "courseCode": "{{ $course->code }}",
+            "datePublished": "{{ $course->created_at->toIso8601String() }}",
+            "dateModified": "{{ $course->updated_at->toIso8601String() }}",
+            "image": "{{ Voyager::image($course->video_poster) }}",
+            "author": {
+                "@type": "Person",
+                "name": "{{ $course->teacher->name }}"
+            }
+        }
+    </script>
+@endsection
+
 @section('content')
     <main>
         <section class="pt-3 pt-xl-5">
             <div class="container" data-sticky-container>
                 <div class="row g-4">
-                    <!-- Main content START -->
-                    <div class="col-xl-8">
+                    <div class="d-flex ">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb breadcrumb-dots mb-0">
+                                <li class="breadcrumb-item"><a href="{{ route('home') }}">صفحه اصلی</a></li>
+                                <li class="breadcrumb-item"><a href="{{ route('courses') }}">دوره ها</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">{{ $course->title }}</li>
+                            </ol>
+                        </nav>
+                    </div>
 
+                    <div class="col-xl-8">
                         <div class="row g-4">
-                            <!-- Title START -->
+
                             <div class="col-12">
-                                <!-- Title -->
-                                <h2 class="fs-3">{{ $course->title }}</h2>
+                                <h1 class="fs-3">{{ $course->title }}</h1>
                                 <p>{!!  $course->description !!}</p>
                             </div>
-                            <!-- Title END -->
-
-                            <!-- Image and video -->
-                            <div class="col-12 position-relative">
-                                <div class="video-player rounded-3">
-                                    @if($course->video)
+                            @if($course->video)
+                                <div class="col-12 position-relative">
+                                    <div class="video-player rounded-3">
                                         <video controls crossorigin="anonymous" playsinline
                                                poster="{{ Voyager::image($course->video_poster) }}">
 
@@ -32,44 +92,31 @@
                                             {{--                                        <track kind="captions" label="French" srclang="fr"--}}
                                             {{--                                               src="{{ asset('assets/images/videos/fr.vtt') }}">--}}
                                         </video>
-                                    @endif
+                                    </div>
                                 </div>
-                            </div>
-
-                            <!-- About course START -->
+                            @endif
                             <div class="col-12">
                                 <div class="card border">
-                                    <!-- Card header START -->
                                     <div class="card-header border-bottom">
-                                        <h3 class="mb-0 fs-5">توضیحات دوره</h3>
+                                        <h2 class="mb-0 fs-5">توضیحات دوره</h2>
                                     </div>
-                                    <!-- Card header END -->
 
-                                    <!-- Card body START -->
                                     <div class="card-body">
                                         {!!  $course->description2 !!}
 
                                     </div>
-                                    <!-- Card body START -->
                                 </div>
                             </div>
-                            <!-- About course END -->
 
-                            <!-- Curriculum START -->
                             <div class="col-12">
                                 <div class="card border rounded-3">
-                                    <!-- Card header START -->
                                     <div class="card-header border-bottom">
                                         <h3 class="mb-0 fs-5">جلسات دوره</h3>
                                     </div>
-                                    <!-- Card header END -->
 
-                                    <!-- Card body START -->
                                     <div class="card-body">
                                         <div class="row g-5">
-                                            <!-- Lecture item START -->
                                             <div class="col-12">
-                                                <!-- Curriculum item -->
 
                                                 @foreach($course->lesson as $lesson)
                                                     <div
@@ -84,47 +131,31 @@
                                                                 <p class="mb-2 mb-sm-0 small">{!! $lesson->description !!}</p>
                                                             </div>
                                                         </div>
-                                                        <!-- Button -->
                                                         <a href="{{ $lesson->video }}"
                                                            class="btn btn-sm btn-success mb-0">پخش</a>
                                                     </div>
-                                                    <!-- Divider -->
                                                     <hr>
                                                 @endforeach
                                             </div>
-
-
                                         </div>
                                     </div>
-                                    <!-- Card body START -->
                                 </div>
                             </div>
-                            <!-- Curriculum END -->
-
-                            <!-- FAQs START -->
                         </div>
                     </div>
-                    <!-- Main content END -->
-
-                    <!-- Right sidebar START -->
                     <div class="col-xl-4">
                         <div data-sticky data-margin-top="80" data-sticky-for="768">
                             <div class="row g-4">
                                 <div class="col-md-6 col-xl-12">
-                                    <!-- Course info START -->
                                     <div class="card card-body border p-4">
-                                        <!-- Price and share button -->
                                         <div class="d-flex justify-content-between align-items-center">
-                                            <!-- Price -->
                                             <h3 class="text-success mb-0">رایگان</h3>
-                                            <!-- Share button with dropdown -->
                                             <div class="dropdown">
                                                 <a href="#" class="btn btn-sm btn-light rounded mb-0 small"
                                                    role="button" id="dropdownShare" data-bs-toggle="dropdown"
                                                    aria-expanded="false">
                                                     <i class="fas fa-fw fa-share-alt"></i>
                                                 </a>
-                                                <!-- dropdown button -->
                                                 <ul class="dropdown-menu dropdown-w-sm dropdown-menu-end min-w-auto shadow rounded"
                                                     aria-labelledby="dropdownShare">
                                                     <li><a class="dropdown-item" href="#"><i
@@ -148,7 +179,6 @@
                                         <!-- Divider -->
                                         <hr>
 
-                                        <!-- Title -->
                                         <h5 class="mb-3 fs-5">مشخصات دوره</h5>
                                         <ul class="list-group list-group-borderless">
                                             <li class="list-group-item d-flex justify-content-between align-items-center">
@@ -162,7 +192,7 @@
                                                 <span class="h6 fw-light mb-0"><i
                                                         class="fas fa-fw fa-clock text-primary"></i>مدت زمان دوره</span>
                                                 <span>
-                                                    {{  $lesson->hour }}
+                                                    {{  $course->hour }}
                                                 </span>
                                             </li>
                                             <li class="list-group-item d-flex justify-content-between align-items-center">
@@ -174,10 +204,8 @@
                                             </li>
 
                                         </ul>
-                                        <!-- Divider -->
                                         {{--                                        <hr>--}}
 
-                                        <!-- Instructor info -->
                                         <h5 class="mb-3 fs-5" style="margin-top: 10px">مدرس دوره</h5>
 
                                         <div class="d-sm-flex align-items-center">
@@ -206,31 +234,6 @@
                                     <!-- Course info END -->
                                 </div>
 
-                                <!-- Tags START -->
-                                {{--                                <div class="col-md-6 col-xl-12">--}}
-                                {{--                                    <div class="card card-body border p-4">--}}
-                                {{--                                        <h4 class="mb-3 fs-5">برچسب ها</h4>--}}
-                                {{--                                        <ul class="list-inline mb-0">--}}
-                                {{--                                            <li class="list-inline-item"><a class="btn btn-outline-light btn-sm"--}}
-                                {{--                                                                            href="#">PHP</a></li>--}}
-                                {{--                                            <li class="list-inline-item"><a class="btn btn-outline-light btn-sm"--}}
-                                {{--                                                                            href="#">استارت آپ</a></li>--}}
-                                {{--                                            <li class="list-inline-item"><a class="btn btn-outline-light btn-sm"--}}
-                                {{--                                                                            href="#">HTML</a></li>--}}
-                                {{--                                            <li class="list-inline-item"><a class="btn btn-outline-light btn-sm"--}}
-                                {{--                                                                            href="#">bootstrap</a></li>--}}
-                                {{--                                            <li class="list-inline-item"><a class="btn btn-outline-light btn-sm"--}}
-                                {{--                                                                            href="#">بانک اطلاعات</a></li>--}}
-                                {{--                                            <li class="list-inline-item"><a class="btn btn-outline-light btn-sm"--}}
-                                {{--                                                                            href="#">طراحی وب</a></li>--}}
-                                {{--                                            <li class="list-inline-item"><a class="btn btn-outline-light btn-sm"--}}
-                                {{--                                                                            href="#">برنامه نویسی</a></li>--}}
-                                {{--                                            <li class="list-inline-item"><a class="btn btn-outline-light btn-sm"--}}
-                                {{--                                                                            href="#">داده کاوی</a></li>--}}
-                                {{--                                        </ul>--}}
-                                {{--                                    </div>--}}
-                                {{--                                </div>--}}
-                                <!-- Tags END -->
                             </div><!-- Row End -->
                         </div>
                     </div>

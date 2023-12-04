@@ -179,7 +179,7 @@
                             <div class="card shadow-hover overflow-hidden bg-transparent">
                                 <div class="position-relative">
                                     <img class="card-img-top" src="{{ Voyager::image($course->image) }}"
-                                         alt="Card image">
+                                         alt="{{ $course->title }}">
 {{--                                    <div class="bg-overlay bg-dark opacity-4"></div>--}}
 {{--                                    <div class="card-img-overlay d-flex align-items-start flex-column">--}}
 {{--                                        <div class="w-100 mt-auto d-inline-flex">--}}
@@ -207,7 +207,7 @@
                                         </div>
                                         <a href="" class="h6 fw-light mb-0"><i class="far fa-bookmark"></i></a>
                                     </div>
-                                    <h5 class="card-title fw-normal"><a href="#">{{ $course->title }}</a></h5>
+                                    <h5 class="card-title fw-normal"><a href="{{ route('single_course' , $course->slug) }}">{{ $course->title }}</a></h5>
 
                                     <hr>
                                     <div class="d-flex justify-content-between align-items-center mb-2">

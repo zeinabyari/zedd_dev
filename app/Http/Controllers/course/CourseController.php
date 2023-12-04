@@ -18,7 +18,7 @@ class CourseController extends Controller
                 ->orWhere('description' , 'LIKE' , '%' . $request->search .'%');
         }
 
-        $courses = $courses->paginate(1);
+        $courses = $courses->paginate(10);
 //                return response()->json($courses);
         return view('course.courses', compact('courses'));
     }

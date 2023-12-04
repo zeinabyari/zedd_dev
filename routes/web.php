@@ -25,8 +25,8 @@ Route::get('/contact', [ContactController::class, 'index'])->name('contact');
 Route::post('/contact', [ContactController::class, 'store'])->name('contact_post');
 
 
-Route::get('/course', [CourseController::class, 'index'])->name('courses');
-Route::get('/single_course/{slug}', [CourseController::class, 'show'])->name('single_course');
+Route::get('/courses', [CourseController::class, 'index'])->name('courses');
+Route::get('/courses/{slug}', [CourseController::class, 'show'])->name('single_course');
 
 
 Route::prefix('auth')->group(function () {

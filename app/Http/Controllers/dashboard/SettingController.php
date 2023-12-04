@@ -47,6 +47,7 @@ class SettingController extends Controller
         $client->name = $request->name;
 
         if ($request->has('avatarPicture')) {
+
             $request->validate([
                 'avatarPicture' => 'required|image|mimes:jpeg,png,jpg|max:2048',
             ]);
@@ -54,13 +55,16 @@ class SettingController extends Controller
             $file = $request->file('avatarPicture');
             $extension = $file->getClientOriginalExtension();
 
+
             if (!in_array($extension, ['png', 'jpg', 'jpeg'])) {
                 return response('Invalid file extension');
             }
 
             $fileName = time() . '-' . rand() . '.' . $extension;
-            Storage::put('files/' . $fileName, file_get_contents($file));
+            Storage::disk("public")->put('files/' . $fileName, file_get_contents($file));
 
+            if($client->avatar)
+                Storage::disk("public")->delete($client->avatar);
             // Delete old avatar if needed
             // Storage::delete($client->avatar);
 

@@ -59,7 +59,7 @@
                                     <!-- Card body START -->
                                     <div class="card-body">
                                         <form class="g-4 align-items-center changeAccountDetail" method="post"
-                                              action="{{ route('profile_edit') }}">
+                                              action="{{ route('profile_edit') }}" enctype="multipart/form-data">
                                             @csrf
 
                                             <div
@@ -75,6 +75,9 @@
 
                                                     <div class="btn upload-button"> آپلود</div>
                                                 </label>
+                                                @error('avatarPicture')
+                                                <div class="form-text" style="color: red">{{ $message }}</div>
+                                                @enderror
                                             </div>
 
                                             <!-- Input item -->

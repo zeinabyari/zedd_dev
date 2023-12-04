@@ -82,10 +82,10 @@
                             <div class="col-sm-6 col-md-12">
                                 <div class="bg-grad rounded-4 p-5 text-start">
                                     <span class="text-white">هدف من:</span>
-                                    <h3 class="text-white ff-vb">
+                                    <h4 class="text-white ff-vb">
                                         دوست دارم تجربه این چند وقتمو در اختیار بقیه قرار بدم و برای کسایی که تازه میخوان برنامه نویسی رو شروع کنن
                                         و سردگمن یه کمکی باشم :)
-                                        </h3>
+                                        </h4>
                                 </div>
                             </div>
                             <!-- Image -->

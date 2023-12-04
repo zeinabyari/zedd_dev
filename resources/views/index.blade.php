@@ -1,15 +1,45 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
-
 <head>
-    <title>{{ setting('site.title') }}</title>
+
+    @hasSection('meta')
+        @yield('meta')
+
+    @else
+        <title>{{ setting('site.title') }}</title>
+        <meta name="description" content="آموزش رایگان برنامه نویسی ">
+    @endif
 
     <!-- Meta Tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="author" content="">
-    <meta name="description" content="آموزش رایگان برنامه نویسی ">
+    <meta name="robots" content="index, follow">
 
+
+    <link rel="canonical" href="{{ urldecode(request()->fullUrl()) }}">
+
+    <!-- WebSite schema with Social Media Profiles -->
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "WebSite",
+            "name": "zedd dev",
+            "url": "{{ url('/') }}",
+            "sameAs": [
+              "https://www.youtube.com/channel/UCN-fTjC-DKFnh8AOpcpjkoQ",
+              "https://www.linkedin.com/in/zeinab-yari-0927aa1b4",
+              "https://www.instagram.com/zedd__dev" ,
+              "https://zedd-dev.com/single_course/t.me/zedd_community"
+            ],
+{{--            "potentialAction": {--}}
+{{--                "@type": "SearchAction",--}}
+{{--                "target": "{{ url('/search?q={search_term_string}') }}",--}}
+{{--                "query-input": "required name=search_term_string"--}}
+{{--            }--}}
+        }
+
+
+    </script>
     <!-- Dark mode -->
     <script>
         const storedTheme = localStorage.getItem('theme')

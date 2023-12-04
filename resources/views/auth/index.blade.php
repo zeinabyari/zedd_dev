@@ -2,13 +2,12 @@
 <html lang="fa" dir="rtl">
 
 <head>
-    <title>Eduport - قالب HTML دوره آنلاین و آموزش</title>
+    <title>{{ setting('site.title') }}</title>
+    <meta name="description" content="آموزش رایگان برنامه نویسی ">
 
     <!-- Meta Tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="author" content="">
-    <meta name="description" content="Eduport - قالب HTML دوره آنلاین و آموزش">
 
     <!-- Dark mode -->
     <script>
@@ -71,7 +70,7 @@
     </script>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="{{ asset('assets/images/favicon.ico') }}">
+    <link rel="shortcut icon" href="{{ Voyager::image( setting('site.favicon') )}}">
 
     <!-- Plugins CSS -->
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/vendor/font-awesome/css/all.min.css') }}">
